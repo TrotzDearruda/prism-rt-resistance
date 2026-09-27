@@ -1,8 +1,7 @@
 {
   "artefacts": {
-    "claim_to_code_sha256": "8106960f76ae345db55598df206e445596857fd265ba9f95210601b8ade0c33e",
-    "dataset_urls_sha256": "e38f364d1314c0313b7a6794b20341227220f1adee5fbe1da18e319910cf55f4",
-    "integrity_manifest_sha256": "d351200f395c4b2756cfb82cfa66d9a167b2b811d69d21c29fe2db01f6e5ae28"
+    "manifest_is_written_last": true,
+    "manifest_lists": "every shipped file except the manifest itself"
   },
   "claims": {
     "alg1-early-stop": {
@@ -67,11 +66,12 @@
           "run_header.json"
         ],
         "cohort": "fixture records staged as an archive",
+        "log_lines": 7,
         "returncode": 0,
         "stderr_tail": [
-          "2026-09-27T09:02:15 INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
-          "2026-09-27T09:02:15 INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
-          "2026-09-27T09:02:15 INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
+          "INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
+          "INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
+          "INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
         ]
       },
       "layer": "code-behaviour",
@@ -169,9 +169,9 @@
       "detail": "60 steps on one batch drive the loss down by more than half, so the forward, loss, backward and step path is connected",
       "evidence": {
         "batch_accuracy": 1.0,
-        "first_loss": 0.9142438769340515,
-        "last_loss": 1.6095949831651524e-05,
-        "ratio": 1.7605750760540885e-05,
+        "first_loss": 0.8418169617652893,
+        "last_loss": 1.3067369764030445e-05,
+        "ratio": 1.5522815953515815e-05,
         "steps": 60
       },
       "layer": "code-behaviour",
@@ -209,8 +209,8 @@
       "detail": "the reversed branch leaves the forward value untouched and negates the gradient exactly",
       "evidence": {
         "forward_value_unchanged": true,
-        "plain_grad_norm": 5.042367458343506,
-        "reversed_grad_norm": 5.042367458343506,
+        "plain_grad_norm": 4.304274559020996,
+        "reversed_grad_norm": 4.304274559020996,
         "signs_opposite": true
       },
       "layer": "code-behaviour",
@@ -661,7 +661,6 @@
     "cuda_available": false,
     "device_used": "cpu",
     "numpy": "2.4.3",
-    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O",
     "python": "3.14.0",
     "torch": "2.11.0"
   },
@@ -680,19 +679,5 @@
     "FAIL": 5,
     "NOT_RUN": 12,
     "PASS": 37
-  },
-  "tally_by_layer": {
-    "code": {
-      "BLOCKED": 1,
-      "FAIL": 0,
-      "NOT_RUN": 12,
-      "PASS": 26
-    },
-    "manuscript_arithmetic": {
-      "BLOCKED": 0,
-      "FAIL": 5,
-      "NOT_RUN": 0,
-      "PASS": 11
-    }
   }
 }

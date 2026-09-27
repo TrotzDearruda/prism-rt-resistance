@@ -38,11 +38,13 @@ from prism.audit.status import (  # noqa: E402
     VerificationReport,
     layer_status,
     overall_status,
-    tally,
     write_verification_report,
 )
-from prism.cli.audit import run as run_integrity  # noqa: E402
-from prism.provenance.digest import digest_file  # noqa: E402
+from prism.cli.audit import (  # noqa: E402
+    audit_hygiene,
+    write_integrity,
+    write_resource_list,
+)
 
 PRECEDENCE = {FAIL: 3, BLOCKED: 2, PASS: 1, NOT_RUN: 0}
 
@@ -305,22 +307,20 @@ def main(argv: Sequence[str] | None = None) -> int:
         },
     )
     verification_path = write_verification_report(PROJECT_ROOT / "verification_report.json", report)
-    hygiene, manifest_path, urls_path = run_integrity(PROJECT_ROOT)
+    hygiene = audit_hygiene(PROJECT_ROOT)
+    urls_path = write_resource_list(PROJECT_ROOT)
 
     report_body = json.loads(verification_path.read_text(encoding="utf-8"))
     report_body["hygiene"] = dict(hygiene.by_check())
     report_body["artefacts"] = {
-        "claim_to_code_sha256": digest_file(claim_to_code),
-        "integrity_manifest_sha256": digest_file(manifest_path),
-        "dataset_urls_sha256": digest_file(urls_path),
-    }
-    report_body["tally_by_layer"] = {
-        "code": tally([o for o in outcomes if o.layer == CODE_BEHAVIOUR]),
-        "manuscript_arithmetic": tally([o for o in outcomes if o.layer == MANUSCRIPT_ARITHMETIC]),
+        "manifest_lists": "every shipped file except the manifest itself",
+        "manifest_is_written_last": True,
     }
     verification_path.write_text(
         json.dumps(report_body, indent=2, sort_keys=True), encoding="utf-8"
     )
+    # The manifest is the last write: it digests this report, so nothing may follow it.
+    manifest_path = write_integrity(PROJECT_ROOT, hygiene, {"context": derived_context()})
 
     summary = DriverReport(
         overall=str(report_body["overall_status"]),

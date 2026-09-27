@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -35,6 +36,7 @@ if TYPE_CHECKING:
     from prism.provenance.config import ExperimentConfig
 
 from checks.fixtures import (
+    FIXTURE_SEED,
     Fixture,
     FixtureSpec,
     build_fixture,
@@ -1406,6 +1408,16 @@ READER_CALL_RATES: Mapping[str, tuple[float, float]] = {
 }
 
 
+def _without_timestamps(text: str, keep: int = 3) -> list[str]:
+    """The last few log lines with their wall-clock prefixes removed.
+
+    The log format starts each line with an ISO timestamp; a timestamp is not a property of the
+    release, and this text lands in a shipped artefact, so it is stripped before it is recorded.
+    """
+    lines = [line for line in text.strip().splitlines() if line.strip()]
+    return [re.sub(r"^\S+\s+", "", line) for line in lines[-keep:]]
+
+
 def _reader_call(rng: np.random.Generator, arm: str, reference: int) -> int:
     """One call from a fixture reader, whose error rates differ by arm in the reported order."""
     negative, positive = READER_CALL_RATES[arm]
@@ -1745,7 +1757,8 @@ def probe_cli_end_to_end() -> ProbeResult:
             "returncode": completed.returncode,
             "cohort": "fixture records staged as an archive",
             "artefacts": artefacts,
-            "stderr_tail": completed.stderr.strip().splitlines()[-3:],
+            "log_lines": len(completed.stderr.strip().splitlines()),
+            "stderr_tail": _without_timestamps(completed.stderr),
         }
     if completed.returncode != 0 or not artefacts:
         return _fail(
@@ -1775,7 +1788,15 @@ def _environment() -> Mapping[str, str]:
 
 
 def run_probes() -> tuple[ProbeResult, ...]:
-    """Every execution probe, in a fixed order."""
+    """Every execution probe, in a fixed order.
+
+    The seed is set before each probe rather than only inside the fitting entry point, because a
+    probe that builds its own model would otherwise report numbers that vary with the initialisation
+    -- and those numbers are written into the claim map, which the integrity manifest digests. A
+    shipped artefact has to be a pure function of the repository.
+    """
+    from prism.numerics.seed import set_seed
+
     probes = (
         probe_config_intake,
         probe_partitioning,
@@ -1808,6 +1829,7 @@ def run_probes() -> tuple[ProbeResult, ...]:
     results: list[ProbeResult] = []
     for probe in probes:
         try:
+            set_seed(FIXTURE_SEED)
             results.append(probe())
         except Exception as failure:  # a probe that cannot run is reported, never passed
             results.append(
@@ -1865,12 +1887,16 @@ def as_mapping(results: Sequence[ProbeResult]) -> dict[str, dict[str, object]]:
 
 
 def environment_fingerprint() -> Mapping[str, object]:
-    """What the probes ran against, recorded next to their outcomes."""
+    """What the probes ran against, recorded next to their outcomes.
+
+    The interpreter version is a reproducibility fact; the host name, the operating-system build
+    and the processor architecture are not recorded, because they identify the machine that ran the
+    check without telling a reader anything about the release.
+    """
     import platform
 
     return {
         "python": platform.python_version(),
-        "platform": platform.platform(),
         "torch": torch.__version__,
         "numpy": np.__version__,
         "cuda_available": bool(torch.cuda.is_available()),

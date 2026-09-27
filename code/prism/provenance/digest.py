@@ -15,18 +15,24 @@ from pathlib import Path
 
 from prism.errors import ResourceError
 
-SKIP_DIRECTORIES = frozenset(
+# Names skipped wherever they appear: build and cache directories that never ship.
+SKIP_ANYWHERE = frozenset(
     {
         ".git",
         "__pycache__",
         ".mypy_cache",
         ".pytest_cache",
         ".ruff_cache",
-        "artifacts",
-        "data",
+        ".ipynb_checkpoints",
+        ".venv",
         "node_modules",
     }
 )
+# Names skipped only at the top level of the tree. A dataset root and an artefact root sit beside
+# the release, but a directory deeper in the tree that happens to carry the same name is release
+# content -- a configuration group called ``data`` was silently dropped from the manifest by an
+# unanchored rule, which is the same failure an unanchored ``.gitignore`` entry produces.
+SKIP_AT_ROOT = frozenset({"artifacts", "data", ".cache"})
 SKIP_SUFFIXES = frozenset({".pyc", ".pyo", ".DS_Store", ".ipynb_checkpoints"})
 
 DIGEST_CHUNK = 1 << 20
@@ -63,6 +69,12 @@ class InventoryEntry:
         }
 
 
+def _skipped(relative: tuple[str, ...]) -> bool:
+    if any(part in SKIP_ANYWHERE for part in relative):
+        return True
+    return bool(relative) and relative[0] in SKIP_AT_ROOT
+
+
 def iter_source_files(root: Path, suffixes: Sequence[str] | None = None) -> list[Path]:
     """Every regular file under ``root`` that is not a build or cache artefact."""
     allowed = set(suffixes) if suffixes is not None else None
@@ -70,7 +82,8 @@ def iter_source_files(root: Path, suffixes: Sequence[str] | None = None) -> list
     for candidate in sorted(root.rglob("*")):
         if not candidate.is_file():
             continue
-        if any(part in SKIP_DIRECTORIES for part in candidate.parts[len(root.parts) :]):
+        relative = candidate.parts[len(root.parts) :]
+        if _skipped(relative):
             continue
         if candidate.suffix in SKIP_SUFFIXES or candidate.name in SKIP_SUFFIXES:
             continue

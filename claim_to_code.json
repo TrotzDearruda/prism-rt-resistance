@@ -1276,14 +1276,14 @@
         "all_finite": true,
         "encoder_tensors_with_gradient": 38,
         "terms": {
-          "alignment": 10.991323,
-          "group": 0.194531,
-          "invariance": 0.442581,
-          "matching": 9.993546,
-          "outcome": 0.577237,
-          "programme": 0.285885,
-          "second_moment": 0.997778,
-          "sign": 0.091354
+          "alignment": 11.13875,
+          "group": 0.262592,
+          "invariance": 0.498538,
+          "matching": 10.142187,
+          "outcome": 0.873705,
+          "programme": 0.41532,
+          "second_moment": 0.996563,
+          "sign": 0.152728
         }
       },
       "layer": "code-behaviour",
@@ -1293,10 +1293,10 @@
       "check": "optimiser-step",
       "detail": "a step moves the parameters and lowers the loss on the batch the gradient came from",
       "evidence": {
-        "loss_after": 0.3865802586078644,
-        "loss_before": 1.1851820945739746,
-        "weight_mass_after": 200.44989013671875,
-        "weight_mass_before": 200.42764282226562
+        "loss_after": 0.3437032699584961,
+        "loss_before": 0.8737052083015442,
+        "weight_mass_after": 199.82687377929688,
+        "weight_mass_before": 199.7108154296875
       },
       "layer": "code-behaviour",
       "status": "PASS"
@@ -1306,9 +1306,9 @@
       "detail": "60 steps on one batch drive the loss down by more than half, so the forward, loss, backward and step path is connected",
       "evidence": {
         "batch_accuracy": 1.0,
-        "first_loss": 0.9142438769340515,
-        "last_loss": 1.6095949831651524e-05,
-        "ratio": 1.7605750760540885e-05,
+        "first_loss": 0.8418169617652893,
+        "last_loss": 1.3067369764030445e-05,
+        "ratio": 1.5522815953515815e-05,
         "steps": 60
       },
       "layer": "code-behaviour",
@@ -1370,8 +1370,8 @@
       "detail": "the reversed branch leaves the forward value untouched and negates the gradient exactly",
       "evidence": {
         "forward_value_unchanged": true,
-        "plain_grad_norm": 5.042367458343506,
-        "reversed_grad_norm": 5.042367458343506,
+        "plain_grad_norm": 4.304274559020996,
+        "reversed_grad_norm": 4.304274559020996,
         "signs_opposite": true
       },
       "layer": "code-behaviour",
@@ -1739,11 +1739,12 @@
           "run_header.json"
         ],
         "cohort": "fixture records staged as an archive",
+        "log_lines": 7,
         "returncode": 0,
         "stderr_tail": [
-          "2026-09-27T09:02:15 INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
-          "2026-09-27T09:02:15 INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
-          "2026-09-27T09:02:15 INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
+          "INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
+          "INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
+          "INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
         ]
       },
       "layer": "code-behaviour",

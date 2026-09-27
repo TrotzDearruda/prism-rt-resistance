@@ -253,8 +253,8 @@
   "entries": [
     {
       "path": ".gitignore",
-      "sha256": "7aceb9f501203030b7f0ff74bd5ba4e5672036eeef949b6e3d05986a6de747cd",
-      "size_bytes": 197
+      "sha256": "ac6a6d19b0f2a1adf442f627d5dbee1e6424b41395c6694f0358d633366d5030",
+      "size_bytes": 200
     },
     {
       "path": ".pre-commit-config.yaml",
@@ -273,13 +273,18 @@
     },
     {
       "path": "README.md",
-      "sha256": "d56ff2e795f6c179a1fd1ef22ebb31265fbac7b9dc58ff311c4567c1379d61c2",
-      "size_bytes": 11585
+      "sha256": "d9dfdbf458a8ec41cd27a128a2bfc9d7bd64c6eae981e18417052f4a5f90fe97",
+      "size_bytes": 11577
     },
     {
       "path": "THIRD_PARTY_NOTICES.txt",
       "sha256": "9897c82aab5a18a75076718ce898e77247e00f7324852bc5707dd57bd44af0b2",
       "size_bytes": 1627
+    },
+    {
+      "path": "claim_to_code.json",
+      "sha256": "9f6bba69573f857f25e2c25d84564eec6c7419bee63c3ed05c93de1dfbd50a00",
+      "size_bytes": 75352
     },
     {
       "path": "code/checks/__init__.py",
@@ -308,13 +313,13 @@
     },
     {
       "path": "code/checks/run_all.py",
-      "sha256": "e2a40795fe90508ede2e4586a7afab4b911b36a2eacc3f1350a4ba75cf856c87",
-      "size_bytes": 13836
+      "sha256": "3a40ad9ef6d27cda447faa6607a93d1b197dce3bf7a57cb100ea0dd267f94a94",
+      "size_bytes": 13733
     },
     {
       "path": "code/checks/runtime_probes.py",
-      "sha256": "be11b847b97c1dfadc2fb90c710ea34c9f62d93a640c60038598670db587289a",
-      "size_bytes": 72867
+      "sha256": "6bb2a7acf16aca9c4193e2c05e847ea8cf4347eb2ea871148d98702aec84552b",
+      "size_bytes": 74111
     },
     {
       "path": "code/prism/__init__.py",
@@ -373,8 +378,8 @@
     },
     {
       "path": "code/prism/audit/integrity.py",
-      "sha256": "231561b472bae0ac21d391b148824922342abc24df5af6ffb84f554e4dc319e5",
-      "size_bytes": 15519
+      "sha256": "287534b4727ffc389035a10b1eacfae45412cceb8f1351054104a075e14819e4",
+      "size_bytes": 15813
     },
     {
       "path": "code/prism/audit/status.py",
@@ -398,8 +403,8 @@
     },
     {
       "path": "code/prism/cli/audit.py",
-      "sha256": "8704bf3e8ade4d346abe2e3d5550db3e731a86427709ebce06252b120cbee564",
-      "size_bytes": 2597
+      "sha256": "0181b8b4383a859d63a3854c847aed7012aef65e05afe7f8b379dddab53da83d",
+      "size_bytes": 3091
     },
     {
       "path": "code/prism/cli/emit.py",
@@ -743,8 +748,8 @@
     },
     {
       "path": "code/prism/provenance/digest.py",
-      "sha256": "2a98b87c901ee745fbac7c7ede1a44274d15aad5a9c983784186a7ee23fa8608",
-      "size_bytes": 3973
+      "sha256": "0be1608ed3000722ebeb51514bf6e216b87567df0e7178e03f79eb1e75f6a5ae",
+      "size_bytes": 4683
     },
     {
       "path": "code/prism/provenance/journal.py",
@@ -875,6 +880,21 @@
       "path": "code/tests/test_verification.py",
       "sha256": "2187465244c3dabd0523710404487eff24730f8ff30f720a9f72133ce63e2345",
       "size_bytes": 11328
+    },
+    {
+      "path": "configs/data/cohort.yaml",
+      "sha256": "1e00d6b497c6dffbe6f97f5eda64d8a739c4aa1bef02e1c769f65d7396e63245",
+      "size_bytes": 423
+    },
+    {
+      "path": "configs/data/supervision.yaml",
+      "sha256": "2cd88d5804aeb6dcd78be26c7b3f9eb4f4e803c480af34d28ebf11647329c50b",
+      "size_bytes": 357
+    },
+    {
+      "path": "configs/data/vocabulary.yaml",
+      "sha256": "2877ca03a2f18c3e4434e149b1e74b84dbc9e01e4ac5f668217295372e699f5b",
+      "size_bytes": 702
     },
     {
       "path": "configs/experiment/_smoke.yaml",
@@ -1012,6 +1032,11 @@
       "size_bytes": 456
     },
     {
+      "path": "dataset_urls.txt",
+      "sha256": "e38f364d1314c0313b7a6794b20341227220f1adee5fbe1da18e319910cf55f4",
+      "size_bytes": 4048
+    },
+    {
       "path": "environment.yml",
       "sha256": "b05469976d247360160e4946ac52e798499c75fbbe9f0e9768ddca3c2aa72ba8",
       "size_bytes": 279
@@ -1040,9 +1065,14 @@
       "path": "scripts/prepare_data.sh",
       "sha256": "2952773dbbe96af1fef5462e0611eb12061f022c9c68183a7393a9a0f5aa696f",
       "size_bytes": 1898
+    },
+    {
+      "path": "verification_report.json",
+      "sha256": "997b15a68b082396faace1b1c44403be11238f9112461a2400d137e345ee7bd8",
+      "size_bytes": 24500
     }
   ],
-  "entry_count": 158,
+  "entry_count": 164,
   "hygiene": {
     "clean": true,
     "finding_counts": {},
@@ -1050,9 +1080,9 @@
       "README.md"
     ],
     "module_count": 98,
-    "scanned_files": 306
+    "scanned_files": 312
   },
-  "inventory_digest": "b8ec4b6100985c40468e53e434d1cca7b86c83fedfcf7c3f0a0da623d38760df",
+  "inventory_digest": "49dbfa5f9af1fdbda9e805065f6bec0a99201dc4f5727465116b828942e7945a",
   "producer": "prism.audit.integrity",
   "project": "prism"
 }

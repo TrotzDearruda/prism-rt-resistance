@@ -402,7 +402,12 @@ def build_manifest(
     extra: Mapping[str, object] | None = None,
     exclude: Sequence[Path] = (),
 ) -> tuple[Path, tuple[InventoryEntry, ...]]:
-    """Write the integrity manifest, keeping the manifest and the other reports out of itself."""
+    """Write the integrity manifest, listing every shipped file and excluding only itself.
+
+    The reports are listed rather than skipped: a reader can then check the manifest against the
+    published tree with one pass, which is the whole point of shipping it. The manifest keeps itself
+    out because a file cannot contain its own digest, and it is written last for that reason.
+    """
     banned = list(exclude) + [manifest_path]
     entries = inventory(root, exclude=banned)
     body: dict[str, object] = {
