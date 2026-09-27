@@ -1,0 +1,1058 @@
+{
+  "claim_count": 40,
+  "context": {
+    "field_count": 22,
+    "fields": [
+      {
+        "confidence": "HIGH",
+        "location": "Introduction, paragraph beginning 'We introduce Prism'",
+        "name": "project_name",
+        "note": "the article names its own system; the release keeps that name and the repository directory carries the full title",
+        "origin": "manuscript",
+        "value": "prism"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Title; Introduction; Methods Sec. 6.1",
+        "name": "domain",
+        "note": "",
+        "origin": "manuscript",
+        "value": "multimodal oncology representation learning for rectal chemoradiotherapy response"
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Methods Sec. 6.3 describes encoders, pooling, fusion and a gradient reversal layer",
+        "name": "framework",
+        "note": "the article states no framework; the grader-based adversarial reading and the convolutional comparison make a tensor-autodiff stack the only viable reading",
+        "origin": "reconstructed",
+        "value": "PyTorch 2.x with plain torch.nn"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "file naming and the structured Nature-style front matter",
+        "name": "venue",
+        "note": "",
+        "origin": "manuscript",
+        "value": "npj Digital Medicine"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.5; Table 5; Data availability",
+        "name": "primary_datasets",
+        "note": "the clinical arm is held by the participating institutions; the six annotated series and the three open-tier resources are read from their public services",
+        "origin": "manuscript",
+        "value": "nine public resources across the two panels of Table 5, plus the clinical arm the study names but does not publish"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "no training-hardware statement anywhere in the article",
+        "name": "compute_target",
+        "note": "the article reports no GPU type, count, memory or wall clock, and no storage figure; the release therefore reports its own measured footprint rather than an estimate presented as the study's",
+        "origin": "manuscript",
+        "value": "COMPUTE_NOT_REPORTED"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Algorithm 1 caption: no experiment numeric value appears in the algorithm",
+        "name": "hparams_reference",
+        "note": "the caption states that all hyper-parameters are declared before fitting, and none are printed; every learning rate, batch size, epoch count and weight in this release is an engineering default recorded as one in the run header",
+        "origin": "manuscript",
+        "value": "none printed"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "no sibling supplementary file accompanies the manuscript file",
+        "name": "supp_path",
+        "note": "the manuscript is a single 28-page file with no linked supplement",
+        "origin": "reconstructed",
+        "value": "none"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6; Methods Sec. 6.10",
+        "name": "evaluation_unit",
+        "note": "",
+        "origin": "manuscript",
+        "value": "patient"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.1",
+        "name": "prevalence",
+        "note": "reported with a 95 per cent interval of [18.2, 20.6]",
+        "origin": "manuscript",
+        "value": 0.194
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.9; Results Sec. 2.1",
+        "name": "equivalence_margin",
+        "note": "",
+        "origin": "manuscript",
+        "value": 0.015
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.10; Table 2 caption",
+        "name": "null_band",
+        "note": "",
+        "origin": "manuscript",
+        "value": 0.003
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.10",
+        "name": "multiplicity_family",
+        "note": "the five contrasts themselves are not printed; the list is a reconstruction",
+        "origin": "manuscript",
+        "value": 5
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Table 8, empirical-coverage column, read against the interval sentence in Sec. 6.6",
+        "name": "interval_nominal_coverage",
+        "note": "the sentence that describes the interval head also prints a coverage word the table does not use; the table value governs and the discrepancy is recorded",
+        "origin": "manuscript",
+        "value": 0.9
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6",
+        "name": "resource_strata",
+        "note": "",
+        "origin": "manuscript",
+        "value": [
+          "high-resource",
+          "upper-middle-resource",
+          "lower-middle-resource"
+        ]
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6",
+        "name": "sites",
+        "note": "",
+        "origin": "manuscript",
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ]
+      },
+      {
+        "confidence": "LOW",
+        "location": "Results Sec. 2.6 names the sites and the regions but prints no assignment",
+        "name": "site_to_region_assignment",
+        "note": "reconstruction; the stratum of each site follows the modality-count sentence",
+        "origin": "reconstructed",
+        "value": [
+          [
+            "A",
+            "Region I"
+          ],
+          [
+            "B",
+            "Region I"
+          ],
+          [
+            "C",
+            "Region II"
+          ],
+          [
+            "D",
+            "Region III"
+          ],
+          [
+            "E",
+            "Region IV"
+          ],
+          [
+            "F",
+            "Region III"
+          ],
+          [
+            "G",
+            "Region IV"
+          ]
+        ]
+      },
+      {
+        "confidence": "LOW",
+        "location": "Methods Sec. 6.1 names a vocabulary of size q; Sec. 6.6 names the block penalty",
+        "name": "metabolite_vocabulary",
+        "note": "the contents are not printed; the vocabulary is the named intermediates of the six programmes the article describes, and its size is an engineering default",
+        "origin": "reconstructed",
+        "value": "48 entries in six programme blocks"
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Results Sec. 2.1 names glycolytic, glutaminolytic, lipid-desaturation and the hypoxia-linked redox programme; Table 7 prints P1-P4",
+        "name": "programme_order",
+        "note": "the last two programme names are reconstructed from the Introduction's list",
+        "origin": "manuscript",
+        "value": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.1",
+        "name": "cohort_sizes",
+        "note": "",
+        "origin": "manuscript",
+        "value": {
+          "held_out_records": 3847,
+          "silent_records": 1024
+        }
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Algorithm 1 caption states that no numeric value appears in the algorithm; none is printed anywhere in the article",
+        "name": "engineering_default_values",
+        "note": "each of these is declared in configs/ and recorded in the run header as a default",
+        "origin": "engineering-default",
+        "value": "the two-stage epoch counts, the batch size, the accumulation window, the world size, both learning rates, the weight decay, the warmup fraction, the gradient clip, the precision, the early-stopping patience, the ensemble member count, the modality dropout rate, the three objective weights, the matching temperature, the discrimination floor, the encoder widths and depths, the vocabulary size and the metabolite block contents"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Data availability",
+        "name": "excluded_from_execution",
+        "note": "",
+        "origin": "manuscript",
+        "value": "the clinical arm, the silent exposure sample and the in-vitro line panel are not redistributable and are not staged here"
+      }
+    ],
+    "project_name": "prism",
+    "project_title": "A Multimodal Foundation Model Charting Metabolic Reprogramming Underlying Radiotherapy Resistance in Colorectal Cancer Across Globally Diverse Care Settings",
+    "unresolved_decisions": [
+      {
+        "candidates": [
+          "engineering defaults recorded per field, as implemented",
+          "a declaration file that a reviewer fills before publication"
+        ],
+        "field": "hparams_reference"
+      },
+      {
+        "candidates": [
+          "report the measured footprint of this release",
+          "leave the field absent until the study reports its own hardware"
+        ],
+        "field": "compute_target"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "path": ".gitignore",
+      "sha256": "7aceb9f501203030b7f0ff74bd5ba4e5672036eeef949b6e3d05986a6de747cd",
+      "size_bytes": 197
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "sha256": "e35b8a55137984470752950adc39bd128e2805679e752ace720e1bad1fe78d3e",
+      "size_bytes": 794
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "73f3d76fbba921cf13e8ac9208dfb0090955785f1bd16e9802fb01fc07d39d73",
+      "size_bytes": 983
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "75f70be72c8b6b2c1953dcc9c2f11ca5fa482da8fdd4adf407d731c6f969c3cd",
+      "size_bytes": 1096
+    },
+    {
+      "path": "README.md",
+      "sha256": "d56ff2e795f6c179a1fd1ef22ebb31265fbac7b9dc58ff311c4567c1379d61c2",
+      "size_bytes": 11585
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "sha256": "9897c82aab5a18a75076718ce898e77247e00f7324852bc5707dd57bd44af0b2",
+      "size_bytes": 1627
+    },
+    {
+      "path": "code/checks/__init__.py",
+      "sha256": "3f3f1308d28fc33679eccea7772c44f6636af26d6ef9b74a713bf59a87dd3775",
+      "size_bytes": 522
+    },
+    {
+      "path": "code/checks/fixtures.py",
+      "sha256": "5d51b22907faf1112956b4f71ed087f4be68d9378de29e67481c5b17b5e84ba5",
+      "size_bytes": 8242
+    },
+    {
+      "path": "code/checks/manuscript_audit.py",
+      "sha256": "3c2f392866338cc1d005928c849d759b979b7995018fcb0364c3647ac6029b49",
+      "size_bytes": 20250
+    },
+    {
+      "path": "code/checks/manuscript_tables.py",
+      "sha256": "f65efdc396cee2ee5ed984561cc770b75aee705c206c029d8e155d2e1c40cf50",
+      "size_bytes": 3929
+    },
+    {
+      "path": "code/checks/reference_math.py",
+      "sha256": "2f3cb647be9510af503459a2a8fe777d6f7d81465568355b7bbd4c8f3675d5b6",
+      "size_bytes": 9023
+    },
+    {
+      "path": "code/checks/run_all.py",
+      "sha256": "e2a40795fe90508ede2e4586a7afab4b911b36a2eacc3f1350a4ba75cf856c87",
+      "size_bytes": 13836
+    },
+    {
+      "path": "code/checks/runtime_probes.py",
+      "sha256": "be11b847b97c1dfadc2fb90c710ea34c9f62d93a640c60038598670db587289a",
+      "size_bytes": 72867
+    },
+    {
+      "path": "code/prism/__init__.py",
+      "sha256": "de6773e23fd534185461af4e809b529de8ca31d4bb42fc4e2845dca17ff05f78",
+      "size_bytes": 2445
+    },
+    {
+      "path": "code/prism/_version.py",
+      "sha256": "afe79246948e136742a9e18ef6a4c3d2becda6ffc50b5f9a411e7d3637ed3e29",
+      "size_bytes": 157
+    },
+    {
+      "path": "code/prism/assessment/__init__.py",
+      "sha256": "2461fd8ff468e5e97158061edf2a75286783eeb90f0c6c8e0e4654027faf8d66",
+      "size_bytes": 2339
+    },
+    {
+      "path": "code/prism/assessment/ablation.py",
+      "sha256": "e6e88c0cee00d5df94a7a80bcf05b604e2da19da91476be711fbeeccb6784ef7",
+      "size_bytes": 10096
+    },
+    {
+      "path": "code/prism/assessment/conditional.py",
+      "sha256": "341c75fc39e9f07a187534e97fe8120b2c194f25c409e31ee3944b790c099087",
+      "size_bytes": 7794
+    },
+    {
+      "path": "code/prism/assessment/harness.py",
+      "sha256": "4ed61590c1359abd731af6c80f09722d44c8af23bf2f65445f7ca8e606b854a6",
+      "size_bytes": 16441
+    },
+    {
+      "path": "code/prism/assessment/protocol.py",
+      "sha256": "75c2af8daa772f77b50358171a87c603470d934204564bbd7afaedcd0b74cfcc",
+      "size_bytes": 6586
+    },
+    {
+      "path": "code/prism/assessment/reporting.py",
+      "sha256": "65659d873c8700e4df05a99b8729d0e9da381b89a9ce10f7c2b9c5b4c82106ab",
+      "size_bytes": 6254
+    },
+    {
+      "path": "code/prism/audit/__init__.py",
+      "sha256": "89383ba7cdf6879a8cbaf5d0189a16847015c9f2214085652661fd6aab9da40e",
+      "size_bytes": 2151
+    },
+    {
+      "path": "code/prism/audit/claims.py",
+      "sha256": "5cd34ff0ee6ea0f14fcfd82164453229c1bdf12f0325177c3a242fd88c5e0899",
+      "size_bytes": 26584
+    },
+    {
+      "path": "code/prism/audit/context.py",
+      "sha256": "2955197b4e458e91c139a5943581b36bb09c71f5fcaa2ab6f57cb16fe6ef4e7c",
+      "size_bytes": 11120
+    },
+    {
+      "path": "code/prism/audit/integrity.py",
+      "sha256": "231561b472bae0ac21d391b148824922342abc24df5af6ffb84f554e4dc319e5",
+      "size_bytes": 15519
+    },
+    {
+      "path": "code/prism/audit/status.py",
+      "sha256": "09ca7af323e52cd700bd811711d82b04581fa346ad60d088cfdaa73c8102fc79",
+      "size_bytes": 5464
+    },
+    {
+      "path": "code/prism/cli/__init__.py",
+      "sha256": "1cc9219e787827b3ab8a400ea935fc295e68e07c022d5b6809ecdea705b7321b",
+      "size_bytes": 778
+    },
+    {
+      "path": "code/prism/cli/__main__.py",
+      "sha256": "b774e15c1094252ceb9701463d48fb2805916733d77d39a8fdfbf7dff00b8437",
+      "size_bytes": 1041
+    },
+    {
+      "path": "code/prism/cli/_shared.py",
+      "sha256": "9e939873a0f9d2d9fdcf0c70add47ff875fa1a4af34dc1b14e02ae53740c7bfa",
+      "size_bytes": 9034
+    },
+    {
+      "path": "code/prism/cli/audit.py",
+      "sha256": "8704bf3e8ade4d346abe2e3d5550db3e731a86427709ebce06252b120cbee564",
+      "size_bytes": 2597
+    },
+    {
+      "path": "code/prism/cli/emit.py",
+      "sha256": "94012dbf220ed2a956f921349f18bf58a4299a944dbb0e34cb001742b59877c0",
+      "size_bytes": 4363
+    },
+    {
+      "path": "code/prism/cli/evaluate.py",
+      "sha256": "ba5fb9f3d0ab109ad84df19a4b4d77a95ad5f88131bef2833dbec7264eb9dc2b",
+      "size_bytes": 7124
+    },
+    {
+      "path": "code/prism/cli/report.py",
+      "sha256": "60c82e0db84681e5ced7adfc78b8cfe55b4668a8298a8198e2e7e42ad0e02f9a",
+      "size_bytes": 3565
+    },
+    {
+      "path": "code/prism/cli/train.py",
+      "sha256": "55997f1310218c64c29a8e339880a8648b8fd253343ec9f77c9f8c2e6aa285c3",
+      "size_bytes": 3131
+    },
+    {
+      "path": "code/prism/cohort/__init__.py",
+      "sha256": "d3e5de4c8ec9340942d1ec02cbcc0012f0acd17fd18574809c30ac34c8b0d43e",
+      "size_bytes": 3943
+    },
+    {
+      "path": "code/prism/cohort/archive.py",
+      "sha256": "bbbda8405ebbe92bc95c0fcd7bcbc5a954c703853841f508ebb2c5cf4fd4eca2",
+      "size_bytes": 9852
+    },
+    {
+      "path": "code/prism/cohort/lexicon.py",
+      "sha256": "83e7c85a54f0181245d7c1dbae48c9d3660ab27507b9dfe40cec790c2fc25bf5",
+      "size_bytes": 7329
+    },
+    {
+      "path": "code/prism/cohort/partitions.py",
+      "sha256": "7e1ae57c9fe14b66a4d542a6f0ebbcb203cd02d97392a6311f162e9869315e78",
+      "size_bytes": 8165
+    },
+    {
+      "path": "code/prism/cohort/pathways.py",
+      "sha256": "51fc613f02cff67930ef94c31a34e02bdeed92c22b3d03556396d4821f6cb72f",
+      "size_bytes": 5756
+    },
+    {
+      "path": "code/prism/cohort/prevalence.py",
+      "sha256": "7c4e5721b340f734e7bb0d6ecc2ff37ea6a9549e6a3de174d899854e7479a469",
+      "size_bytes": 3547
+    },
+    {
+      "path": "code/prism/cohort/schema.py",
+      "sha256": "474829b18ffd3125fdcc132b2ca7fa6dfb18a62aa0d15f2eb0da23be6b057db2",
+      "size_bytes": 7593
+    },
+    {
+      "path": "code/prism/cohort/strata.py",
+      "sha256": "4d88517ce153519c675f2206373706f75e76a1804e9e5a9b9ef8efa10d867caa",
+      "size_bytes": 4939
+    },
+    {
+      "path": "code/prism/cohort/supervision.py",
+      "sha256": "22a550cee258f9b45abd7fbc5e46a5d8694cab9c16d5f4873ce3e835d507b144",
+      "size_bytes": 7123
+    },
+    {
+      "path": "code/prism/cohort/supply.py",
+      "sha256": "3ed2c9265e99c71ea229952a2caafe52a0a878ed1df072cc7ee574a96fc43476",
+      "size_bytes": 20239
+    },
+    {
+      "path": "code/prism/cohort/tensors.py",
+      "sha256": "1ec2e3447aef3861e7637440b358f9d917ad38f1c1b82e7f2f04528941e4b04d",
+      "size_bytes": 7260
+    },
+    {
+      "path": "code/prism/cohort/views.py",
+      "sha256": "9ff895e64b7ab26521ab8431277ae0b8a143a0c4b929c2d038d3cc2d42ea559c",
+      "size_bytes": 4162
+    },
+    {
+      "path": "code/prism/emission/__init__.py",
+      "sha256": "af4e75432fd5a1b1bc54fbc26ffc24e3a987b99c9f634e474461ae913e8d7869",
+      "size_bytes": 1208
+    },
+    {
+      "path": "code/prism/emission/intervals.py",
+      "sha256": "15941691c28dc770b2df4164205be9e37d786b4ec666208f57640c8d80edad06",
+      "size_bytes": 7603
+    },
+    {
+      "path": "code/prism/emission/programmes.py",
+      "sha256": "68d709b945a4f0939bf643abc5650aa4244631dcf7f75ab870df76a7d1184f48",
+      "size_bytes": 10043
+    },
+    {
+      "path": "code/prism/errors.py",
+      "sha256": "f788481ff211d9915cc0897591cd8f5fd6a74a65f38aedfe09af08b85ae96e6a",
+      "size_bytes": 1129
+    },
+    {
+      "path": "code/prism/fitting/__init__.py",
+      "sha256": "0ccc19a337102e1159cd29894effe9175079b4e8a8d6e31070c723e19cb72085",
+      "size_bytes": 3064
+    },
+    {
+      "path": "code/prism/fitting/checkpoint.py",
+      "sha256": "83e052f8091c5de87a019b58f35c2e64aec4f3cd4ffd40eb3dc5cb4726e9d4bc",
+      "size_bytes": 9582
+    },
+    {
+      "path": "code/prism/fitting/ensemble.py",
+      "sha256": "b7dbcaf0f79075306b67cad155a625bfb54ab81df31166326304cdf065d21c9e",
+      "size_bytes": 8182
+    },
+    {
+      "path": "code/prism/fitting/loop.py",
+      "sha256": "4bd3cfefa235c79cc2b0ed4b13e4299da1ee87efe776777ae3b592c627d2c7c6",
+      "size_bytes": 17903
+    },
+    {
+      "path": "code/prism/fitting/optim.py",
+      "sha256": "2eb7f62be065edcaa40bdffda880ab93aba3a4837d85c23b38b9285b7c8b55b1",
+      "size_bytes": 5214
+    },
+    {
+      "path": "code/prism/fitting/schedule.py",
+      "sha256": "6a6aad26e478e2e962f49022d5501c7909f9f6a3558f9c3294ee6ea9ec62a517",
+      "size_bytes": 4142
+    },
+    {
+      "path": "code/prism/fitting/stages.py",
+      "sha256": "b8f2655a93e563b59a5d54b369f6976fe6291a56adeeb98944351d84d14288bc",
+      "size_bytes": 15007
+    },
+    {
+      "path": "code/prism/measurement/__init__.py",
+      "sha256": "cc07c3dbb1a5492cf3d80641717f598877d6882459667ebbc6c74578eaa84ce4",
+      "size_bytes": 4056
+    },
+    {
+      "path": "code/prism/measurement/attribution.py",
+      "sha256": "1bb94415f8d589c14ec77dac1b8573c9a9abc92fe46abc5e8edb0d9fa42e0969",
+      "size_bytes": 6686
+    },
+    {
+      "path": "code/prism/measurement/calibration.py",
+      "sha256": "0f6fe2eb1006b1ebabd6dd8f2596c2e4b45c90b7e299bafd0fa78cd78c1b77f5",
+      "size_bytes": 6193
+    },
+    {
+      "path": "code/prism/measurement/coherence.py",
+      "sha256": "e8494785fb8961a8408df369ab2332e65faefd91c8950b09bd839e02de4bad63",
+      "size_bytes": 6517
+    },
+    {
+      "path": "code/prism/measurement/decision.py",
+      "sha256": "fd0697743460da7b6bb7a695ff3e1bc09510d22dfc7bdca7c53d9a5b372ccf45",
+      "size_bytes": 4733
+    },
+    {
+      "path": "code/prism/measurement/discrimination.py",
+      "sha256": "1fc37fcc8db357ce37f7c56338daf4035b3994996bd7ec89e0140e30988065ef",
+      "size_bytes": 6839
+    },
+    {
+      "path": "code/prism/measurement/reader.py",
+      "sha256": "35f29c33881337ef09f000364e3de9cc83dbffd7aa3d087c0d78c40ab4c4d832",
+      "size_bytes": 7692
+    },
+    {
+      "path": "code/prism/measurement/scaling.py",
+      "sha256": "e1871b91072e27df48c822c38427be9918e096358f0d4858fb173db3c547b37b",
+      "size_bytes": 6069
+    },
+    {
+      "path": "code/prism/measurement/transfer.py",
+      "sha256": "ff89d9e5d6790d8407b091dd409402e5faa4c31990ed3ef882638e6f56a35122",
+      "size_bytes": 7986
+    },
+    {
+      "path": "code/prism/measurement/uncertainty.py",
+      "sha256": "f5a6cc823495c01a0e94d5c074e357b5294e28a46f4dd8a1aedfbf05410d08c8",
+      "size_bytes": 4241
+    },
+    {
+      "path": "code/prism/modelling/__init__.py",
+      "sha256": "ddf439bb338f4206d3f55f575d983680720dead8c7c8d5ecf89e4a1462acacac",
+      "size_bytes": 2604
+    },
+    {
+      "path": "code/prism/modelling/assembly.py",
+      "sha256": "5d99ef1d1c5cd10fc55f3f36ddaec43296d8fab22f8a398e6495b44b0bd84934",
+      "size_bytes": 7305
+    },
+    {
+      "path": "code/prism/modelling/backbone.py",
+      "sha256": "e210dd55793a8fecc6a8d8317e0b97068d0ee55c2fa47200ed28cf8db0e4ad03",
+      "size_bytes": 6176
+    },
+    {
+      "path": "code/prism/modelling/fusion.py",
+      "sha256": "960823af5e3d2a49e74dc4accd9d3d8fd7e5062ed45807c465997c944e2b74cb",
+      "size_bytes": 2982
+    },
+    {
+      "path": "code/prism/modelling/interval_head.py",
+      "sha256": "ddd580f458f33645dd34d9a915c869d9dc606a8816f36bd821f1bb28caec68c2",
+      "size_bytes": 5824
+    },
+    {
+      "path": "code/prism/modelling/modality_dropout.py",
+      "sha256": "713510fbbfa1384eebaff1f9d4cd32e1199cc6d080e551f66784b92c75be3c49",
+      "size_bytes": 3529
+    },
+    {
+      "path": "code/prism/modelling/pooling.py",
+      "sha256": "56255a8dc668f1e6acba264e34343c47c418762d785770c5d55b9b55f47cb099",
+      "size_bytes": 4290
+    },
+    {
+      "path": "code/prism/modelling/probe.py",
+      "sha256": "dc6f69cf43622efdb0065fd9a6fb78802150bb870bf827bf2c0569ade587e1f0",
+      "size_bytes": 5203
+    },
+    {
+      "path": "code/prism/modelling/programme_head.py",
+      "sha256": "adef7f25f4730f1b6f45fa673acf6e6345ae0d58e6dffb159a2c6f92d5a4eb75",
+      "size_bytes": 7544
+    },
+    {
+      "path": "code/prism/modelling/streams.py",
+      "sha256": "7e59702018b02715e65c567541949bf59d4576c5eed69c74bfbf8a91e4c13175",
+      "size_bytes": 7379
+    },
+    {
+      "path": "code/prism/notation.py",
+      "sha256": "ab16baf6530c9e6ae98cae4ecf5e28976b45f5fe8f6f99e3d9ed0f2461e8fbd2",
+      "size_bytes": 2735
+    },
+    {
+      "path": "code/prism/numerics/__init__.py",
+      "sha256": "e2fdd12688bae47c2c01f78a2fe14a127ef5cfc57bc96958417db32194613464",
+      "size_bytes": 1471
+    },
+    {
+      "path": "code/prism/numerics/boot.py",
+      "sha256": "3975d64b1b39ccd28a68ea74b22efaa70997a10156193a7aa137442cabd836e6",
+      "size_bytes": 2802
+    },
+    {
+      "path": "code/prism/numerics/interval.py",
+      "sha256": "a69be19845c3622762be1f1a46026b9f97b4d154c8a85a8d7dad8b59643aa1cc",
+      "size_bytes": 1580
+    },
+    {
+      "path": "code/prism/numerics/linalg.py",
+      "sha256": "41cc1ed7eab2dbb6175c3912672fcc2129d98e2e6a7338ab3b8b9c4c15ca4f2b",
+      "size_bytes": 4603
+    },
+    {
+      "path": "code/prism/numerics/operating_point.py",
+      "sha256": "b1bd26486f42cdf79dedd1132eb19643490c721f8401eceeab9fee180a42a7ab",
+      "size_bytes": 5709
+    },
+    {
+      "path": "code/prism/numerics/seed.py",
+      "sha256": "d6cb37b42a67e0a112b75853fc968655f72b233e407eed2ce9ec30b0a1a6035a",
+      "size_bytes": 1622
+    },
+    {
+      "path": "code/prism/objectives/__init__.py",
+      "sha256": "5a0e31609ab6313f44c8b699d8c1b9a754924b5e47d043bf24ac7aeb3ad94b64",
+      "size_bytes": 2057
+    },
+    {
+      "path": "code/prism/objectives/alignment.py",
+      "sha256": "6a62429cd8874a49d4ca0e2a38e35ce31b05ec1b933e88908fd7970357aa6a3b",
+      "size_bytes": 6390
+    },
+    {
+      "path": "code/prism/objectives/feasibility.py",
+      "sha256": "7373c03f299fdeea491a6f01844587d7d368497ba975bd730c85b5561b85d46a",
+      "size_bytes": 4899
+    },
+    {
+      "path": "code/prism/objectives/invariance.py",
+      "sha256": "f37becc59ee38ee7398668d063567b39a68fd8dd39bcf86da43a784909bc586f",
+      "size_bytes": 5918
+    },
+    {
+      "path": "code/prism/objectives/outcome.py",
+      "sha256": "fd70a6d6bafa76b77f2112dd49355e5c89deeacc104bce2db7c85a833be43fa0",
+      "size_bytes": 3397
+    },
+    {
+      "path": "code/prism/objectives/programme.py",
+      "sha256": "124cf873e1ed314233dd8ca4eaaafe4864b974f6880a83d03434375e565e8364",
+      "size_bytes": 5215
+    },
+    {
+      "path": "code/prism/objectives/total.py",
+      "sha256": "4d8a53f45cbb4d53bbcfa27bbfd1a80731d965075d080d4b995494fbb30a05ef",
+      "size_bytes": 7954
+    },
+    {
+      "path": "code/prism/perturbation/__init__.py",
+      "sha256": "7eb0297c91fbce6129f894635aa4393b8ec23cefb38c3f88fc7e4c67e3d7b375",
+      "size_bytes": 1924
+    },
+    {
+      "path": "code/prism/perturbation/clonogenic.py",
+      "sha256": "3db2c49c64d01b909f21c6a0b541e156cd115cada3e6dac7994caf307b23078e",
+      "size_bytes": 6544
+    },
+    {
+      "path": "code/prism/perturbation/design.py",
+      "sha256": "2030cc7fa480649fe856236a33cf8086e2f52f58606f054fb93ff5c0d3b2a010",
+      "size_bytes": 6497
+    },
+    {
+      "path": "code/prism/perturbation/falsify.py",
+      "sha256": "4287032c047d48157a4bbc22a0d9ea74c5aed9d783682ada521f976a1ee117bc",
+      "size_bytes": 7782
+    },
+    {
+      "path": "code/prism/perturbation/flux.py",
+      "sha256": "44ec48146f699c638883d15cd36a2c5d59c8d7621158e7e18cd5882f5bd25bbc",
+      "size_bytes": 5384
+    },
+    {
+      "path": "code/prism/provenance/__init__.py",
+      "sha256": "fe62c0cb14b06e5216059c8525ead6a5330be282db7475448ed00af57c0baf8c",
+      "size_bytes": 1831
+    },
+    {
+      "path": "code/prism/provenance/config.py",
+      "sha256": "1cda5322c48692e0036e44dc6393ef2a8bd45eda409c04f8edd46b4b0dd45d30",
+      "size_bytes": 20171
+    },
+    {
+      "path": "code/prism/provenance/digest.py",
+      "sha256": "2a98b87c901ee745fbac7c7ede1a44274d15aad5a9c983784186a7ee23fa8608",
+      "size_bytes": 3973
+    },
+    {
+      "path": "code/prism/provenance/journal.py",
+      "sha256": "ee6dcd61b69c7a963ff22605892b34d5d4981bdb1fa8dc4c3f23550e84c8ff66",
+      "size_bytes": 3174
+    },
+    {
+      "path": "code/prism/provenance/paths.py",
+      "sha256": "baac1abb2fe6340410dc3043183f57ff6e4a02ddc210affadf704cba779f3128",
+      "size_bytes": 2915
+    },
+    {
+      "path": "code/prism/reference/__init__.py",
+      "sha256": "4fc15ab62d7de5ab210aec21b7802df0a66e84a7588a0dd7341fc25c6affcb56",
+      "size_bytes": 4060
+    },
+    {
+      "path": "code/prism/reference/tables.py",
+      "sha256": "c71742374d8e91ca31b9e4af8ae8172f62e05045b47717a8114a5c03da2a88c7",
+      "size_bytes": 12435
+    },
+    {
+      "path": "code/prism/reference/urls.py",
+      "sha256": "df862a8a3854903c87814df3ea3bbd451e569e125b7cbfd80b9f3ff67d5caf0c",
+      "size_bytes": 7240
+    },
+    {
+      "path": "code/prism/statistics/__init__.py",
+      "sha256": "849961395593e9e63d7ccf362c18bb5416591776263579b325911c043107ae00",
+      "size_bytes": 2868
+    },
+    {
+      "path": "code/prism/statistics/ci.py",
+      "sha256": "b357f12807557b9a1c40b51225ff88cc1186905a24eeffeb1bb122c6ee03e5bd",
+      "size_bytes": 4591
+    },
+    {
+      "path": "code/prism/statistics/delong.py",
+      "sha256": "d0bdb188f2211ea3a848407801c85dba75085f83ff5ecfd287038b89476e70fa",
+      "size_bytes": 8125
+    },
+    {
+      "path": "code/prism/statistics/equivalence.py",
+      "sha256": "d9661febe8c2a0e3dca7497bcd7f0c33c8226d2fd6a0bf7ebfc277dfd0b51801",
+      "size_bytes": 8244
+    },
+    {
+      "path": "code/prism/statistics/family.py",
+      "sha256": "e1a9c982f31deeb25cb0fcc9efde183e40bc4c573f34d490c71c5cdf71b25cf7",
+      "size_bytes": 6404
+    },
+    {
+      "path": "code/prism/statistics/holm.py",
+      "sha256": "cfaf607cf6ebb9b0b9aedaf6fde33bd7ef30cc77f15736425bb03e75beccc221",
+      "size_bytes": 4973
+    },
+    {
+      "path": "code/prism/statistics/nullband.py",
+      "sha256": "eb6df93a3bfae7b500bfdbf435a78a23886552790fdbff300e5aa9b151c30123",
+      "size_bytes": 4187
+    },
+    {
+      "path": "code/tests/conftest.py",
+      "sha256": "e180916a93687ad640b6f4778b8b0face22de2cfe0eb3a338cb4cdd9557b694f",
+      "size_bytes": 4882
+    },
+    {
+      "path": "code/tests/test_ablation_protocol.py",
+      "sha256": "eb64f733be84439fa4b441711a62b2e76c9f4c7576e0684d23b854c4c05d3ac0",
+      "size_bytes": 12370
+    },
+    {
+      "path": "code/tests/test_cohort.py",
+      "sha256": "6f0aa20ad6fd39f5548ab590840c67b10aaa33d2ebe0a09f281241f3a7576294",
+      "size_bytes": 7326
+    },
+    {
+      "path": "code/tests/test_config.py",
+      "sha256": "3d6e881acef5c462bdd5ddea47697112de3be58e3ea3f3d2ca22055cfedd5984",
+      "size_bytes": 6873
+    },
+    {
+      "path": "code/tests/test_data.py",
+      "sha256": "895da204cac645a0a871fb64d65debde9bd5df9b7cc4a45dee64a111696ab1c1",
+      "size_bytes": 5252
+    },
+    {
+      "path": "code/tests/test_emission.py",
+      "sha256": "93967ec18eb4e3f990717b920fb1c512d8538791d6de75a4546ec7803771a993",
+      "size_bytes": 6109
+    },
+    {
+      "path": "code/tests/test_losses.py",
+      "sha256": "db75b337717588bc073dca5078b88e005fff3785d11c3222aaba1b5ba94efc95",
+      "size_bytes": 9404
+    },
+    {
+      "path": "code/tests/test_metrics.py",
+      "sha256": "10a7a7449bc65dfa2fdeed4279c782229a196438b95ae11218caa6f36874a952",
+      "size_bytes": 7462
+    },
+    {
+      "path": "code/tests/test_models.py",
+      "sha256": "ccfb30da8bdf204a784fd09472b94a73224e7c0d55dcd12c407c9a901711a62f",
+      "size_bytes": 8878
+    },
+    {
+      "path": "code/tests/test_perturbation.py",
+      "sha256": "698aa1c9e2e8481e783f0b4059978b87b982c19010c31a4a15a65b82173071c3",
+      "size_bytes": 8713
+    },
+    {
+      "path": "code/tests/test_statistics.py",
+      "sha256": "182e795a423a1b42c98c05594903a56fa7b073685e1b384bd58f94ac82c62fc0",
+      "size_bytes": 7373
+    },
+    {
+      "path": "code/tests/test_training_smoke.py",
+      "sha256": "67c1910cf670d11a904b9a9c91f7a731b98538c8c025c639925ab65542671867",
+      "size_bytes": 12371
+    },
+    {
+      "path": "code/tests/test_transfer_scaling.py",
+      "sha256": "e451cb030a8be2b6a45f5ceca9d384239bd29d690960a5b62bf05f42200333bc",
+      "size_bytes": 7103
+    },
+    {
+      "path": "code/tests/test_verification.py",
+      "sha256": "2187465244c3dabd0523710404487eff24730f8ff30f720a9f72133ce63e2345",
+      "size_bytes": 11328
+    },
+    {
+      "path": "configs/experiment/_smoke.yaml",
+      "sha256": "e511d1738d76aa30328133b02eda29e208292c6d485b49f231777dccfc939a48",
+      "size_bytes": 1861
+    },
+    {
+      "path": "configs/experiment/ablation_backbone_only_no_constraint.yaml",
+      "sha256": "0204953bccb92a3d8d92523e9fc127565fdf39c99ba04cc37b6310ae41cecab2",
+      "size_bytes": 549
+    },
+    {
+      "path": "configs/experiment/ablation_minus_alignment.yaml",
+      "sha256": "cdb29345339168717e81644a5aaf8fce6bb377908de4c4a7aa515291ed07fa5d",
+      "size_bytes": 493
+    },
+    {
+      "path": "configs/experiment/ablation_minus_alignment_and_invariance.yaml",
+      "sha256": "78f7be310a737a465478d85f9d4252652fd916510b06664eed7a61ff999565bc",
+      "size_bytes": 512
+    },
+    {
+      "path": "configs/experiment/ablation_minus_interval_head.yaml",
+      "sha256": "fbd99f145fa36dd2b8d2aa0fcb488fdeaf2705138dd385d9144b56bf7382c4eb",
+      "size_bytes": 508
+    },
+    {
+      "path": "configs/experiment/ablation_minus_invariance.yaml",
+      "sha256": "5f36bf97811a4c1b052496bd6538a4b2735c66aad7ebee8d4ed8029eca667a70",
+      "size_bytes": 503
+    },
+    {
+      "path": "configs/experiment/ablation_minus_sparse_signed_decoder.yaml",
+      "sha256": "c18d4a4f463f6944836aee19465ed0a6ea91ad4129e77ff735e32838eb1dc5b5",
+      "size_bytes": 550
+    },
+    {
+      "path": "configs/experiment/ablation_tier0_permuted_metabolite_alignment.yaml",
+      "sha256": "3d97b706e9f49382737450132ef95fcb0a0d39968542b99749bde7a80be9483b",
+      "size_bytes": 614
+    },
+    {
+      "path": "configs/experiment/ablation_tier0_randomised_site_labels.yaml",
+      "sha256": "58ca400520a499125be6766350b580c442c47a17808dee977cac581c408bcf27",
+      "size_bytes": 581
+    },
+    {
+      "path": "configs/experiment/comparator_adversarial.yaml",
+      "sha256": "577e2a581a7ccccbacf94af4f01cce607a973550b7572d59a33fa6e409982c21",
+      "size_bytes": 337
+    },
+    {
+      "path": "configs/experiment/comparator_probe.yaml",
+      "sha256": "5d2d7d382121c12e7cf538e051f18327062a39dbc7b6921f704e6cfea12b57ac",
+      "size_bytes": 453
+    },
+    {
+      "path": "configs/experiment/comparator_unconstrained.yaml",
+      "sha256": "68338fc8b647cf75a65317afd2a227e6f082c3c94c7e743fe8814e1abe7d8a7d",
+      "size_bytes": 415
+    },
+    {
+      "path": "configs/experiment/conditional_oxygenation.yaml",
+      "sha256": "7d917b24500c7d916780d195fd39c3b2ee2a9956a0b1f625b4302c1fb70a28d9",
+      "size_bytes": 486
+    },
+    {
+      "path": "configs/experiment/main.yaml",
+      "sha256": "a5b29533374840f7f7e173137832cd9ff5b924ef13ce5d8e4f18c858923620b9",
+      "size_bytes": 529
+    },
+    {
+      "path": "configs/experiment/supplementary_auxiliary_resources.yaml",
+      "sha256": "eb410f2cd70d6e1928706ba1678de8cc5ae3f94c6bac5c026ca0be90ea4ea17b",
+      "size_bytes": 463
+    },
+    {
+      "path": "configs/experiment/supplementary_ensemble_members.yaml",
+      "sha256": "ecd117d3f4ff4bce88ca49da66a5c2e7c012b5d44a7329ac4270ef45eff086b5",
+      "size_bytes": 389
+    },
+    {
+      "path": "configs/experiment/supplementary_scaling_fit_fraction.yaml",
+      "sha256": "e35e52a833ea3d5be3b5575dfece1f90c67e2457d463438a8083a964ce846c03",
+      "size_bytes": 501
+    },
+    {
+      "path": "configs/experiment/supplementary_scaling_supervision_fraction.yaml",
+      "sha256": "4dac47da4d75d687ef2c87a4b6916451cabd681a3da4f8a909216d5330a7ea99",
+      "size_bytes": 508
+    },
+    {
+      "path": "configs/experiment/transfer_cross_domain.yaml",
+      "sha256": "aa3be69fa1959bb754c07640e0de8c57f4fac2d333d9e1f452312611c0ea8ca4",
+      "size_bytes": 469
+    },
+    {
+      "path": "configs/model/backbone.yaml",
+      "sha256": "6c1ca91a4fed8595e0f8330287627469f1bdc34e562c12b65d4ea6b89e3f88dc",
+      "size_bytes": 759
+    },
+    {
+      "path": "configs/train/constrained.yaml",
+      "sha256": "2cb5c2ec2035770284c3a80a96401f8543e20185b0e33036db295bb7ab9cdbe1",
+      "size_bytes": 850
+    },
+    {
+      "path": "configs/train/objective_adversarial.yaml",
+      "sha256": "57c912441cfc029080f7a198fdc1bc87db0888600f84ab4e94875b499eb1b8d8",
+      "size_bytes": 362
+    },
+    {
+      "path": "configs/train/objective_constrained.yaml",
+      "sha256": "483432b5b33c94bee9fca2b4c34fecd05798965aa7b95ed94f9181d305ef2ba9",
+      "size_bytes": 431
+    },
+    {
+      "path": "configs/train/objective_no_alignment.yaml",
+      "sha256": "34655ad41f08203488d9b0001d65318a28f22c5aad579bda37159e71d204f669",
+      "size_bytes": 337
+    },
+    {
+      "path": "configs/train/objective_no_constraints.yaml",
+      "sha256": "5eb3131fe1d2febcc8dd3b442c968445f47a0a1ab79b0ae8c7897e96a74f13a2",
+      "size_bytes": 340
+    },
+    {
+      "path": "configs/train/objective_no_invariance.yaml",
+      "sha256": "4967c6f2b8a2f7b42850621c2660b060029cdc1d272fb3e8f79b1fe5746c627b",
+      "size_bytes": 338
+    },
+    {
+      "path": "configs/train/objective_unconstrained.yaml",
+      "sha256": "60fc4aeee85f5af59a4aaf8bafb97359940cecb731ff12a30853a7d4d5e9b139",
+      "size_bytes": 456
+    },
+    {
+      "path": "environment.yml",
+      "sha256": "b05469976d247360160e4946ac52e798499c75fbbe9f0e9768ddca3c2aa72ba8",
+      "size_bytes": 279
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "821b073fae3cff0e1ece184f740ca3876c60cf260edafe52747321bd694c42e7",
+      "size_bytes": 3025
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "b3e1a6700ee0d57d40a4fba1a5dfc9be51293b6904cbe56d4a9182162149f7f7",
+      "size_bytes": 349
+    },
+    {
+      "path": "scripts/launch_eval.sh",
+      "sha256": "8da62228b8991e27c7c0b03801aa6bc57a3dd3e65a15c7787dc39e29b7cf8664",
+      "size_bytes": 391
+    },
+    {
+      "path": "scripts/launch_train.sh",
+      "sha256": "907a41597bed8deefd3f54e970ceb2dedfda0783ff92f2863596512ef2d41acf",
+      "size_bytes": 791
+    },
+    {
+      "path": "scripts/prepare_data.sh",
+      "sha256": "2952773dbbe96af1fef5462e0611eb12061f022c9c68183a7393a9a0f5aa696f",
+      "size_bytes": 1898
+    }
+  ],
+  "entry_count": 158,
+  "hygiene": {
+    "clean": true,
+    "finding_counts": {},
+    "markdown_files": [
+      "README.md"
+    ],
+    "module_count": 98,
+    "scanned_files": 306
+  },
+  "inventory_digest": "b8ec4b6100985c40468e53e434d1cca7b86c83fedfcf7c3f0a0da623d38760df",
+  "producer": "prism.audit.integrity",
+  "project": "prism"
+}

@@ -1,0 +1,12 @@
+# The adversarial reading of the invariance penalty.
+# Ref: Methods Sec. 6.5; Table 3 Panel B, last row.
+name: comparator_adversarial
+arm: adversarial
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_adversarial
+train: constrained
+notes:
+  - the site classifier exists only in this arm

@@ -1,0 +1,12 @@
+# Supplementary experiment: the upper block of the scaling table.
+# Ref: Results Sec. 3.2; Table 7 upper block. The arm is trained on a stated fraction of the retrospective arm; the fraction is swept by prism.cohort.partitions.training_frame.
+name: supplementary_scaling_fit_fraction
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the sweep is applied by overriding a single key at launch

@@ -1,0 +1,13 @@
+# Ablation row: the invariance penalty removed from the objective.
+# Ref: Results Sec. 2.2; Table 2, row '-invariance penalty'.
+# Ref: Table 2 caption -- the null band is 0.003 and this row is read against the full configuration.
+name: ablation_minus_invariance
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_no_invariance
+train: constrained
+notes:
+  - every value other than the ablation itself is the primary configuration's value

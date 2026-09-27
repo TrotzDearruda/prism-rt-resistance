@@ -1,0 +1,31 @@
+Third-party material referenced or redistributed by this release
+
+Python packages
+---------------
+The release depends on NumPy (BSD-3-Clause), SciPy (BSD-3-Clause), scikit-learn (BSD-3-Clause),
+PyTorch (BSD-3-Clause), PyYAML (MIT) and pandas (BSD-3-Clause), each under its own licence and its own
+copyright holders. No package source is vendored here.
+
+Public data resources
+---------------------
+The auxiliary comparison reads resources that remain under the terms of their own repositories. They
+are not redistributed with this release; the reading code fetches them from their source services and
+records a per-resource ledger.
+
+  TCGA-COAD, TCGA-READ      National Cancer Institute Genomic Data Commons, open tier.
+                            Data use terms: NIH Genomic Data Sharing policy.
+  PDC000116 (CPTAC-COAD)    National Cancer Institute Proteomic Data Commons.
+                            Underlying publication: Vasaikar et al., Cell 2019.
+  GSE132668, GSE119409, GSE46862, GSE35452, GSE45404, GSE68204
+                            NCBI Gene Expression Omnibus, public access, terms as declared by each
+                            submitter. Each series remains attributed to its own submitting group.
+
+Mentioned works
+---------------
+The articles listed in the reference list of the accompanying paper are cited by that paper. No text
+or figure from them is reproduced in this release.
+
+Clinical data
+-------------
+The retrospective and silent cohorts, and the cell-line panel of the in-vitro arm, are held by the
+participating institutions. They are not included here and no attempt is made to reconstruct them.

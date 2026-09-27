@@ -1,0 +1,10 @@
+# The second reading of the invariance penalty: a site classifier trained through a reversed
+# gradient. Ref: Methods Sec. 6.5 and Table 3 Panel B, whose last row is this reading.
+lambda_alignment: 1.0
+lambda_invariance: 0.5
+lambda_programme: 0.1
+lambda_sign: 0.05
+covariance_weight: 1.0
+matching_temperature: 0.1
+invariance_mode: adversarial
+group_penalty: 1.0

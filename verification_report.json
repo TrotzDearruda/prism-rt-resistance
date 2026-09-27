@@ -1,0 +1,698 @@
+{
+  "artefacts": {
+    "claim_to_code_sha256": "8106960f76ae345db55598df206e445596857fd265ba9f95210601b8ade0c33e",
+    "dataset_urls_sha256": "e38f364d1314c0313b7a6794b20341227220f1adee5fbe1da18e319910cf55f4",
+    "integrity_manifest_sha256": "d351200f395c4b2756cfb82cfa66d9a167b2b811d69d21c29fe2db01f6e5ae28"
+  },
+  "claims": {
+    "alg1-early-stop": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "alg1-emission": {
+      "check": "programme-emission",
+      "detail": "every emitted programme keeps between one and four entries per block, carries unit signs, and reports an ordered interval for each supported programme",
+      "evidence": {
+        "block_count": 6,
+        "effects_per_statement": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "intervals_are_ordered": true,
+        "signs_are_unit": true,
+        "support_max": 24,
+        "support_min": 21
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "alg1-modality-dropout": {
+      "check": "modality-dropout",
+      "detail": "a stream the site cannot acquire is never enabled and every row keeps at least one stream",
+      "evidence": {
+        "dropped_streams": 80,
+        "every_row_keeps_a_stream": true,
+        "low_resource_rows": 4,
+        "no_absent_stream_switched_on": true,
+        "rescued_rows": 5,
+        "rows": 64
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "alg1-stage1-probe": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "alg1-stage2-constrained": {
+      "check": "cli-end-to-end",
+      "detail": "the training entry point runs a configured job from a config file and writes its run header, fit summary and checkpoints",
+      "evidence": {
+        "artefacts": [
+          "fit_summary.json",
+          "probe-default.member00.best.pt",
+          "probe-default.member00.pt",
+          "run_header.json"
+        ],
+        "cohort": "fixture records staged as an archive",
+        "returncode": 0,
+        "stderr_tail": [
+          "2026-09-27T09:02:15 INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
+          "2026-09-27T09:02:15 INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
+          "2026-09-27T09:02:15 INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "align-two-halves": {
+      "check": "alignment-terms",
+      "detail": "the matching half separates a row permutation while staying non-negative, and the second-moment half separates an axis permutation whose row pairs are untouched",
+      "evidence": {
+        "matching_is_non_negative": true,
+        "matching_matched": 0.01728634350001812,
+        "matching_row_scrambled": 10.318896293640137,
+        "second_moment_column_scrambled": 0.5731669068336487,
+        "second_moment_matched": 0.23185613751411438,
+        "second_moment_row_scrambled": 1.4820832916484505e-07
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "cohort-assembly-section": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "not-reported-in-article"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "compute-profile-absent": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "not-reported-in-article"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "conditional-oxygenation": {
+      "check": "conditional-value",
+      "detail": "the rule maps a gain above the band to retained, a non-positive gain to lost and a gain inside the band to inconclusive; on measured columns, the three carrying signal above the proxy are retained and the three carrying none are not",
+      "evidence": {
+        "gains": {
+          "P1": 0.06187,
+          "P2": 0.06187,
+          "P3": 0.06187,
+          "P4": 0.00033,
+          "P5": -0.00016,
+          "P6": -0.00023
+        },
+        "rule_verdicts": {
+          "P1": "retains-incremental-value",
+          "P2": "retains-incremental-value",
+          "P3": "loses-conditional-value",
+          "P4": "loses-conditional-value",
+          "P5": "retains-incremental-value",
+          "P6": "inconclusive"
+        },
+        "summary": {
+          "n_inconclusive": 1.0,
+          "n_lost": 2.0,
+          "n_programmes": 6.0,
+          "n_retained": 3.0,
+          "null_band": 0.003,
+          "retained_minus_lost": 1.0,
+          "substitution_reading": "the programme is partly, but not wholly, a re-description of oxygenation"
+        },
+        "verdicts": {
+          "P1": "retains-incremental-value",
+          "P2": "retains-incremental-value",
+          "P3": "retains-incremental-value",
+          "P4": "inconclusive",
+          "P5": "loses-conditional-value",
+          "P6": "loses-conditional-value"
+        }
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "criterion-conjunctive": {
+      "check": "criterion-arithmetic",
+      "detail": "the reported primary difference, external difference and external margin over the strongest baseline all follow from the printed cells",
+      "evidence": {
+        "external_difference": 0.039000000000000035,
+        "external_limb": true,
+        "margin_over_strongest_baseline": 0.09199999999999997,
+        "primary_difference": -0.006000000000000005,
+        "primary_limb": true,
+        "reported_margin_over_strongest_baseline": 0.092
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "PASS"
+    },
+    "eq1-objective": {
+      "check": "single-batch-overfit",
+      "detail": "60 steps on one batch drive the loss down by more than half, so the forward, loss, backward and step path is connected",
+      "evidence": {
+        "batch_accuracy": 1.0,
+        "first_loss": 0.9142438769340515,
+        "last_loss": 1.6095949831651524e-05,
+        "ratio": 1.7605750760540885e-05,
+        "steps": 60
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "eq2-feasibility": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "internal-contradiction-decoder-section": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "not-reported-in-article"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "interval-nominal-coverage": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "invariance-two-readings": {
+      "check": "gradient-reversal",
+      "detail": "the reversed branch leaves the forward value untouched and negates the gradient exactly",
+      "evidence": {
+        "forward_value_unchanged": true,
+        "plain_grad_norm": 5.042367458343506,
+        "reversed_grad_norm": 5.042367458343506,
+        "signs_opposite": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "partition-patient-level": {
+      "check": "partitioning",
+      "detail": "no patient straddles two layers, no holdout site appears in the development arm, a staged archive reads back unchanged, and an absent archive is reported rather than substituted",
+      "evidence": {
+        "absent_archive_reported": true,
+        "archive_round_trip": true,
+        "layers": {
+          "development": 280,
+          "external": 68,
+          "internal": 52,
+          "silent": 0
+        },
+        "patients": {
+          "development": 140,
+          "external": 34,
+          "internal": 26,
+          "silent": 0
+        },
+        "prevalence_reconstruction_matches": true,
+        "site_boundary_holds": true,
+        "supervision_fraction": 0.6
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "perturbation-assay": {
+      "check": "assay-protocol",
+      "detail": "a two-dose schedule and a protocol frozen after the model review are both refused, and the sensitisation ratio is read against the pre-declared band",
+      "evidence": {
+        "has_falsified_outcome": true,
+        "has_supported_outcome": true,
+        "late_protocol_freeze_refused": true,
+        "line_substitution_detected": false,
+        "outcomes": {
+          "n_falsified": 5.0,
+          "n_inconclusive": 0.0,
+          "n_programmes": 6.0,
+          "n_supported": 1.0,
+          "supported_fraction": 0.16666666666666666
+        },
+        "sensitisation_ratio": 0.7,
+        "single_dose_schedule_refused": true,
+        "verdict_set": [
+          "falsified",
+          "supported"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "perturbation-flux": {
+      "check": "flux-direction",
+      "detail": "every labelling shift whose direction matches the emitted sign is counted, and a shift against the sign is not",
+      "evidence": {
+        "agreement": {
+          "agreement_fraction": 1.0,
+          "log2_median_shift": 0.584962500721156,
+          "median_ratio": 1.4999999999999998,
+          "n_agreeing": 3.0,
+          "n_metabolites": 3.0
+        },
+        "directions_agree": [
+          true,
+          true,
+          true
+        ],
+        "ratios": {
+          "glutamine": 1.5,
+          "lactate": 2.0,
+          "palmitate": 0.5
+        }
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "perturbation-no-line-swap": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "prevalence-rule-in": {
+      "check": "prevalence-dependence",
+      "detail": "the same sensitivity and specificity give a higher positive predictive value as prevalence rises, which is the dependence the introduction names",
+      "evidence": {
+        "prevalences": [
+          0.1,
+          0.194,
+          0.3
+        ],
+        "values": [
+          0.3186010760953113,
+          0.5031976671422492,
+          0.6433005690636316
+        ]
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "PASS"
+    },
+    "programme-group-penalty": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "reported-vocabulary-absent": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "not-reported-in-article"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "stat-bootstrap-patients": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "stat-delong": {
+      "check": "paired-comparison",
+      "detail": "the paired contrast reproduces both areas from the structural components and agrees with an independent pair count, and the patient bootstrap resamples whole patients",
+      "evidence": {
+        "bootstrap_difference_interval": [
+          0.02641689575586071,
+          0.23619440029865588
+        ],
+        "bootstrap_observed": 0.1303168402777778,
+        "independent_auc_a": 0.8230251736111112,
+        "independent_difference": 0.1303168402777778,
+        "n_patients": 100,
+        "paired_auc_a": 0.8230251736111112,
+        "paired_difference": 0.1303168402777778,
+        "patient_bootstrap_half_width": 0.2023064375811261
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "stat-equivalence-margin": {
+      "check": "equivalence-test",
+      "detail": "the parity difference is inside the margin, the conjunctive criterion needs both limbs, and a margin narrower than its own interval is reported as unresolvable",
+      "evidence": {
+        "criterion_satisfied": true,
+        "equivalent": true,
+        "external_limb": true,
+        "interval": [
+          -0.013839855938160216,
+          0.0018398559381602158
+        ],
+        "margin_resolvable_at_0.004": 1.0,
+        "margin_resolvable_at_0.020": 0.0,
+        "margin_used": 0.4,
+        "p_value": 0.0122244726550447,
+        "primary_limb": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "stat-holm-family": {
+      "check": "holm-correction",
+      "detail": "the step-down adjustment matches an independent implementation value for value and rejects the same contrasts",
+      "evidence": {
+        "independent": [
+          0.005,
+          0.032,
+          0.06,
+          0.08,
+          0.3
+        ],
+        "max_delta": 0.0,
+        "raw": [
+          0.001,
+          0.008,
+          0.02,
+          0.04,
+          0.3
+        ],
+        "rejected": [
+          "c0",
+          "c1"
+        ],
+        "released": [
+          0.005,
+          0.032,
+          0.06,
+          0.08,
+          0.3
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "stat-null-band": {
+      "check": "null-band-exemptions",
+      "detail": "the caption exempts only the interval-head row, but other rows move a metric by less than the null band",
+      "evidence": {
+        "cells_inside_band": [
+          "minus_interval_head.internal=0.000",
+          "minus_interval_head.external=0.001",
+          "minus_interval_head.lowest_resource=0.001",
+          "minus_both.internal=0.001",
+          "tier0_permuted_metabolites.internal=0.001"
+        ],
+        "unexpected": [
+          "minus_both.internal=0.001",
+          "tier0_permuted_metabolites.internal=0.001"
+        ]
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "FAIL"
+    },
+    "table1-predictors": {
+      "check": "table1-partition-ordering",
+      "detail": "every predictor degrades from internal to external and again to low resource",
+      "evidence": {
+        "breaches": [],
+        "rows": 9
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "PASS"
+    },
+    "table2-ablation": {
+      "check": "ablation-matrix",
+      "detail": "each removal row zeroes exactly the term it names, the metabolite control permutes rows inside a region without changing the multiset, and the site control preserves the label histogram",
+      "evidence": {
+        "minus_alignment_lambda": 0.0,
+        "minus_both_lambda": [
+          0.0,
+          0.0
+        ],
+        "minus_invariance_lambda": 0.0,
+        "rows": 9,
+        "rows_actually_moved": true,
+        "site_histogram_preserved": true,
+        "tier_zero_rows": 2,
+        "within_region_row_multiset_preserved": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "table2-super-additivity": {
+      "check": "component-synergy-prose",
+      "detail": "the joint cost printed in the prose matches either the table cell or the additive expectation it is compared against",
+      "evidence": {
+        "additive_expectation": 0.10699999999999998,
+        "prose_values_printed": [
+          0.127,
+          0.10699999999999998
+        ],
+        "table_joint_cost": 0.127
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "PASS"
+    },
+    "table3-attribution-probe": {
+      "check": "attribution-and-transfer",
+      "detail": "a representation carrying site offsets is separated from one that is not, the constrained row loses most of that excess, and the transfer matrix reports a retention factor below one off the diagonal",
+      "evidence": {
+        "diagonal": [
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "reading": {
+          "auc_retained": -0.010000000000000009,
+          "region_accuracy_drop": 0.25416666666666665,
+          "site_above_chance_after": 0.12083333333333335,
+          "site_accuracy_drop": 0.25416666666666665
+        },
+        "retention": [
+          0.9,
+          0.9333333333333333,
+          0.9333333333333333,
+          0.9
+        ],
+        "site_accuracy_constrained": 0.37083333333333335,
+        "site_accuracy_unconstrained": 0.625,
+        "site_excess_after_constraint": 0.12083333333333335,
+        "smallest_retention": [
+          "R0",
+          0.9
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "table3-transfer-matrix": {
+      "check": "transfer-diagonal-maximality",
+      "detail": "the caption states the diagonal is not uniformly the maximum and that the pooled row exceeds several diagonal entries, while every diagonal is the row maximum and the pooled row is below every diagonal",
+      "evidence": {
+        "columns_where_pooled_exceeds_diagonal": [],
+        "rows_where_diagonal_is_not_maximum": []
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "FAIL"
+    },
+    "table4-reader-study": {
+      "check": "reader-and-scaling",
+      "detail": "the three arms order as reported and the combination calls fewer negatives positive; the saturation reduction depends on the tolerance in the expected direction, and both curves show the reported non-monotone step while the lower block is reported as unsaturated",
+      "evidence": {
+        "arm_auc": {
+          "clinician-alone": 0.867634540811501,
+          "clinician-with-model": 0.9392635328982629,
+          "model-alone": 0.8183896087518522
+        },
+        "arm_overcall": {
+          "clinician-alone": 0.24398625429553264,
+          "clinician-with-model": 0.16494845360824742,
+          "model-alone": 0.27147766323024053
+        },
+        "lower_saturated": 0.0,
+        "lower_turning_points": 2.0,
+        "model_alone_above_clinician_alone": false,
+        "saturation_at_0.002": 1.0,
+        "saturation_at_0.05": 0.125,
+        "team_benefit": {
+          "auc_margin": 0.07162899208676188,
+          "beats_both": 0.0,
+          "overcall_reduction": 0.10652920962199311,
+          "sensitivity_margin": 0.01834862385321101,
+          "specificity_margin": -0.07216494845360821
+        },
+        "upper_turning_points": 2.0
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "table5-auxiliary-resources": {
+      "check": "public-resource-read",
+      "detail": "none of the public resources could be reached from this machine, so no count could be checked against the table",
+      "evidence": {
+        "mismatches": [],
+        "reached": {},
+        "unreachable": [
+          "GSE132668: ResourceError",
+          "TCGA-COAD: ResourceError",
+          "TCGA-READ: ResourceError"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "BLOCKED"
+    },
+    "table6-cross-domain": {
+      "check": "cross-domain-advantage-prose",
+      "detail": "the third value in the prose sequence does not match the advantage column, which carries the non-colorectal setting's own advantage",
+      "evidence": {
+        "prose_advantages": [
+          0.021,
+          0.018,
+          0.014
+        ],
+        "table_advantages": [
+          0.021,
+          0.018,
+          0.025
+        ]
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "FAIL"
+    },
+    "table7-coherence": {
+      "check": "not-executed",
+      "detail": "no probe or arithmetic check was written for this claim; the code anchors exist and the claim is mapped, but nothing was executed against it",
+      "evidence": {
+        "executability": "executable"
+      },
+      "layer": "code-behaviour",
+      "status": "NOT_RUN"
+    },
+    "table7-scaling": {
+      "check": "scaling-saturation",
+      "detail": "the prose states the maximum external performance is already reached at the smallest fraction, while the curve's maximum sits at the largest fraction",
+      "evidence": {
+        "footer_half_width": 0.013,
+        "gap": 0.04899999999999993,
+        "lower_dips": true,
+        "maximum": 0.861,
+        "smallest_fraction_value": 0.812,
+        "upper_dips": true
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "FAIL"
+    },
+    "table8-coverage": {
+      "check": "interval-coverage",
+      "detail": "the coverage read-out equals an independent count on the same intervals and halving the width lowers coverage, so the column responds to the intervals it describes",
+      "evidence": {
+        "empirical_half_width": 0.595,
+        "empirical_nominal_width": 0.8991666666666667,
+        "half_width_ratio": 0.5,
+        "independent_coverage": 0.8991666666666667,
+        "mean_interval_width": 0.6579414507805889,
+        "nominal": 0.9
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    "table8-ensembling": {
+      "check": "ensemble-reading",
+      "detail": "seed aggregation improves calibration and narrows intervals, while the regime ensemble buys discrimination and gives up calibration",
+      "evidence": {
+        "nominal_coverage": 0.9,
+        "regime_auc_gain": 0.01100000000000001,
+        "regime_calibration_loss": 0.019999999999999907,
+        "reported_coverage": [
+          0.884,
+          0.899,
+          0.891
+        ],
+        "seed_calibration_gain": 0.04999999999999993,
+        "seed_width_reduction": 0.010000000000000002
+      },
+      "layer": "manuscript-arithmetic",
+      "status": "PASS"
+    },
+    "training-hyperparameters-absent": {
+      "check": "config-intake",
+      "detail": "the margin, null band, family size and coverage target are carried from the configuration into the objects that use them",
+      "evidence": {
+        "effective_batch": 32,
+        "equivalence_margin": 0.015,
+        "family_size": 5,
+        "interval_nominal_coverage": 0.9,
+        "null_band": 0.003
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    }
+  },
+  "code_status": "PASS",
+  "environment": {
+    "cuda_available": false,
+    "device_used": "cpu",
+    "numpy": "2.4.3",
+    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "torch": "2.11.0"
+  },
+  "hygiene": {},
+  "manuscript_arithmetic_status": "FAIL",
+  "notes": [
+    "the clinical arm, the silent exposure sample and the in-vitro line panel are not redistributable and were not observed; claims that depend on them are reported as blocked rather than as passing",
+    "the clinical arm is not obtainable here, so the tables the article reports were not produced; the code layer was exercised on fixture records built by the harness, and no value measured on them is a study result",
+    "the manuscript-arithmetic layer is scored separately from the code layer so that a contradiction inside the article is not read as a broken release"
+  ],
+  "overall_status": "PARTIALLY_VERIFIED",
+  "producer": "prism.audit.status",
+  "project": "prism",
+  "tally": {
+    "BLOCKED": 1,
+    "FAIL": 5,
+    "NOT_RUN": 12,
+    "PASS": 37
+  },
+  "tally_by_layer": {
+    "code": {
+      "BLOCKED": 1,
+      "FAIL": 0,
+      "NOT_RUN": 12,
+      "PASS": 26
+    },
+    "manuscript_arithmetic": {
+      "BLOCKED": 0,
+      "FAIL": 5,
+      "NOT_RUN": 0,
+      "PASS": 11
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Ablation row: both constraint terms removed at once.
+# Ref: Results Sec. 2.2; Table 2, row '-alignment and invariance'.
+# Ref: Table 2 caption -- the null band is 0.003 and this row is read against the full configuration.
+name: ablation_minus_alignment_and_invariance
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_no_constraints
+train: constrained
+notes:
+  - every value other than the ablation itself is the primary configuration's value

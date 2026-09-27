@@ -1,0 +1,12 @@
+# The conditional test: does each programme keep incremental value once oxygenation is a covariate.
+# Ref: Results Sec. 2.1; Discussion Sec. 4.1; Table 1, row 'Prism, conditional on oxygenation proxy'.
+name: conditional_oxygenation
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the proxy is entered as an additional covariate and the reading is per programme, not one test

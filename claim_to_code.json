@@ -1,0 +1,2424 @@
+{
+  "anchor_inventory": [
+    {
+      "anchor": "README.md",
+      "claims": [
+        "compute-profile-absent"
+      ]
+    },
+    {
+      "anchor": "configs/experiment/main.yaml",
+      "claims": [
+        "training-hyperparameters-absent"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.ablation.ABLATIONS",
+      "claims": [
+        "table2-ablation"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.ablation.control_recovery",
+      "claims": [
+        "table2-ablation"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.ablation.permute_metabolite_rows",
+      "claims": [
+        "table2-ablation"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.ablation.randomise_site_labels",
+      "claims": [
+        "table2-ablation"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.conditional.conditional_gain",
+      "claims": [
+        "conditional-oxygenation"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.harness.table1_predictors",
+      "claims": [
+        "table1-predictors"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.protocol.adjudicate_plan",
+      "claims": [
+        "criterion-conjunctive"
+      ]
+    },
+    {
+      "anchor": "prism.assessment.protocol.criterion_from_measurements",
+      "claims": [
+        "criterion-conjunctive"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.archive.read_archive",
+      "claims": [
+        "cohort-assembly-section"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.lexicon.BLOCK_BY_PROGRAMME",
+      "claims": [
+        "reported-vocabulary-absent"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.lexicon.Lexicon.index_blocks",
+      "claims": [
+        "programme-group-penalty"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.lexicon.default_lexicon",
+      "claims": [
+        "reported-vocabulary-absent"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.assign_layers",
+      "claims": [
+        "partition-patient-level"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.check_no_patient_overlap",
+      "claims": [
+        "partition-patient-level"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.check_site_boundary",
+      "claims": [
+        "partition-patient-level"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.fold_by_region",
+      "claims": [
+        "table3-transfer-matrix"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.stratified_supervision_frame",
+      "claims": [
+        "table7-scaling"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.partitions.training_frame",
+      "claims": [
+        "table7-scaling"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.pathways.conditional_verdicts",
+      "claims": [
+        "conditional-oxygenation"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.pathways.programme_specificity_holds",
+      "claims": [
+        "conditional-oxygenation"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.prevalence.reported_prevalence_interval",
+      "claims": [
+        "prevalence-rule-in"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.strata.DEFAULT_REGISTRY",
+      "claims": [
+        "cohort-assembly-section"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.supervision.region_covariance",
+      "claims": [
+        "table7-coherence"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.supply.load_series",
+      "claims": [
+        "table5-auxiliary-resources"
+      ]
+    },
+    {
+      "anchor": "prism.cohort.supply.query_gdc_project",
+      "claims": [
+        "table5-auxiliary-resources"
+      ]
+    },
+    {
+      "anchor": "prism.emission.intervals.coverage_of",
+      "claims": [
+        "table8-coverage"
+      ]
+    },
+    {
+      "anchor": "prism.emission.intervals.leave_one_site_out_folds",
+      "claims": [
+        "alg1-emission"
+      ]
+    },
+    {
+      "anchor": "prism.emission.intervals.pooled_coverage",
+      "claims": [
+        "table8-coverage"
+      ]
+    },
+    {
+      "anchor": "prism.emission.intervals.shift_reading",
+      "claims": [
+        "interval-nominal-coverage"
+      ]
+    },
+    {
+      "anchor": "prism.emission.programmes.emit_programmes",
+      "claims": [
+        "alg1-emission"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.ensemble.build_seed_ensemble",
+      "claims": [
+        "table8-ensembling"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.ensemble.choose_configuration",
+      "claims": [
+        "table8-ensembling"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.ensemble.regime_ensemble",
+      "claims": [
+        "table8-ensembling"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.loop.alignment_step",
+      "claims": [
+        "alg1-stage2-constrained"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.loop.apply_dropout",
+      "claims": [
+        "alg1-modality-dropout"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.loop.invariance_step",
+      "claims": [
+        "alg1-stage2-constrained"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.loop.outcome_step",
+      "claims": [
+        "alg1-stage2-constrained"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.loop.run_epoch",
+      "claims": [
+        "alg1-stage2-constrained"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.stages.development_split",
+      "claims": [
+        "alg1-early-stop"
+      ]
+    },
+    {
+      "anchor": "prism.fitting.stages.fit",
+      "claims": [
+        "alg1-early-stop",
+        "alg1-stage1-probe",
+        "eq2-feasibility"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.attribution.attribution_row",
+      "claims": [
+        "table3-attribution-probe"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.attribution.constraint_reading",
+      "claims": [
+        "table3-attribution-probe"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.coherence.programme_coherence",
+      "claims": [
+        "table7-coherence"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.reader.automation_bias_reading",
+      "claims": [
+        "table4-reader-study"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.reader.inter_reader_table",
+      "claims": [
+        "table4-reader-study"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.reader.reader_arm_result",
+      "claims": [
+        "table4-reader-study"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.reader.team_benefit",
+      "claims": [
+        "table4-reader-study"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.scaling.lower_block_saturation",
+      "claims": [
+        "table7-scaling"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.scaling.saturation_fraction",
+      "claims": [
+        "table7-scaling"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.scaling.turning_points",
+      "claims": [
+        "table7-scaling"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.transfer.TransferAdvantage",
+      "claims": [
+        "table6-cross-domain"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.transfer.TransferMatrix",
+      "claims": [
+        "table3-transfer-matrix"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.transfer.advantage_reading",
+      "claims": [
+        "table6-cross-domain"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.transfer.probe_only_row",
+      "claims": [
+        "table6-cross-domain"
+      ]
+    },
+    {
+      "anchor": "prism.measurement.uncertainty.aggregation_reading",
+      "claims": [
+        "table8-ensembling"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.assembly.Prism.freeze_encoders",
+      "claims": [
+        "alg1-stage1-probe"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.assembly.reverse_gradient",
+      "claims": [
+        "invariance-two-readings"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.interval_head.IntervalHead",
+      "claims": [
+        "interval-nominal-coverage"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.interval_head.report_intervals",
+      "claims": [
+        "table8-coverage"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.modality_dropout.draw_dropout_plan",
+      "claims": [
+        "alg1-modality-dropout"
+      ]
+    },
+    {
+      "anchor": "prism.modelling.programme_head.select_support",
+      "claims": [
+        "alg1-emission"
+      ]
+    },
+    {
+      "anchor": "prism.numerics.boot.patient_blocks",
+      "claims": [
+        "stat-bootstrap-patients"
+      ]
+    },
+    {
+      "anchor": "prism.numerics.operating_point.RuleInProfile",
+      "claims": [
+        "prevalence-rule-in"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.alignment.AlignmentLoss",
+      "claims": [
+        "eq1-objective"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.alignment.AlignmentLoss.matching",
+      "claims": [
+        "align-two-halves"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.alignment.AlignmentLoss.second_moment",
+      "claims": [
+        "align-two-halves"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.feasibility.FeasibilityFloor",
+      "claims": [
+        "eq2-feasibility"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.feasibility.evaluate_epoch",
+      "claims": [
+        "eq2-feasibility"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.invariance.AdversarialPenalty",
+      "claims": [
+        "invariance-two-readings"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.invariance.VariancePenalty",
+      "claims": [
+        "eq1-objective",
+        "invariance-two-readings"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.programme.GroupPenalty",
+      "claims": [
+        "internal-contradiction-decoder-section",
+        "programme-group-penalty"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.programme.ProgrammePenalty",
+      "claims": [
+        "eq1-objective"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.total.ConstrainedObjective.stage_one",
+      "claims": [
+        "alg1-stage1-probe"
+      ]
+    },
+    {
+      "anchor": "prism.objectives.total.ConstrainedObjective.stage_two",
+      "claims": [
+        "eq1-objective"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.clonogenic.read_assay",
+      "claims": [
+        "perturbation-assay"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.design.IrradiationScheme",
+      "claims": [
+        "perturbation-assay"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.design.protocol_gate",
+      "claims": [
+        "perturbation-assay"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.falsify.count_failures",
+      "claims": [
+        "perturbation-no-line-swap"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.falsify.line_substitution_requested",
+      "claims": [
+        "perturbation-no-line-swap"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.flux.direction_agreement",
+      "claims": [
+        "perturbation-flux"
+      ]
+    },
+    {
+      "anchor": "prism.perturbation.flux.isotope_fraction",
+      "claims": [
+        "perturbation-flux"
+      ]
+    },
+    {
+      "anchor": "prism.provenance.config.ORIGIN_ENGINEERING_DEFAULT",
+      "claims": [
+        "training-hyperparameters-absent"
+      ]
+    },
+    {
+      "anchor": "prism.provenance.config.TrainConfig",
+      "claims": [
+        "compute-profile-absent"
+      ]
+    },
+    {
+      "anchor": "prism.reference.tables.TABLE1_ROWS",
+      "claims": [
+        "table1-predictors"
+      ]
+    },
+    {
+      "anchor": "prism.reference.urls.RESOURCES",
+      "claims": [
+        "table5-auxiliary-resources"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.ci.patient_cluster_bootstrap",
+      "claims": [
+        "stat-bootstrap-patients"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.delong.paired_delong",
+      "claims": [
+        "stat-delong"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.delong.structural_components",
+      "claims": [
+        "stat-delong"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.equivalence.SuccessCriterion",
+      "claims": [
+        "stat-equivalence-margin"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.equivalence.reachability_check",
+      "claims": [
+        "stat-equivalence-margin"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.equivalence.two_one_sided",
+      "claims": [
+        "stat-equivalence-margin"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.family.FAMILY",
+      "claims": [
+        "stat-holm-family"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.family.synergy_statistic",
+      "claims": [
+        "table2-super-additivity"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.holm.exploratory_label",
+      "claims": [
+        "stat-holm-family"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.holm.holm_step_down",
+      "claims": [
+        "stat-holm-family"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.nullband.NullBand",
+      "claims": [
+        "stat-null-band"
+      ]
+    },
+    {
+      "anchor": "prism.statistics.nullband.coverage_failure",
+      "claims": [
+        "stat-null-band"
+      ]
+    }
+  ],
+  "claim_count": 40,
+  "claims": [
+    {
+      "claim_id": "eq1-objective",
+      "code_anchors": [
+        "prism.objectives.total.ConstrainedObjective.stage_two",
+        "prism.objectives.alignment.AlignmentLoss",
+        "prism.objectives.invariance.VariancePenalty",
+        "prism.objectives.programme.ProgrammePenalty"
+      ],
+      "executability": "executable",
+      "kind": "equation",
+      "note": "",
+      "paper_location": "Methods Sec. 6.1, Eq. (1)",
+      "statement": "The constrained objective couples the outcome term with the alignment term, the invariance penalty and the programme penalty under three weights"
+    },
+    {
+      "claim_id": "eq2-feasibility",
+      "code_anchors": [
+        "prism.objectives.feasibility.FeasibilityFloor",
+        "prism.objectives.feasibility.evaluate_epoch",
+        "prism.fitting.stages.fit"
+      ],
+      "executability": "executable",
+      "kind": "equation",
+      "note": "",
+      "paper_location": "Methods Sec. 6.1, Eq. (2); Algorithm 1 steps 9-11",
+      "statement": "The discrimination of the constrained model must stay at or above a pre-declared floor, and an epoch that would breach the floor is reverted"
+    },
+    {
+      "claim_id": "alg1-stage1-probe",
+      "code_anchors": [
+        "prism.fitting.stages.fit",
+        "prism.modelling.assembly.Prism.freeze_encoders",
+        "prism.objectives.total.ConstrainedObjective.stage_one"
+      ],
+      "executability": "executable",
+      "kind": "algorithm",
+      "note": "",
+      "paper_location": "Algorithm 1 steps 1-2",
+      "statement": "Stage 1 holds the encoders fixed and fits the outcome head, the programme decoder and the interval head on the outcome term and the programme penalty"
+    },
+    {
+      "claim_id": "alg1-stage2-constrained",
+      "code_anchors": [
+        "prism.fitting.loop.run_epoch",
+        "prism.fitting.loop.outcome_step",
+        "prism.fitting.loop.alignment_step",
+        "prism.fitting.loop.invariance_step"
+      ],
+      "executability": "executable",
+      "kind": "algorithm",
+      "note": "",
+      "paper_location": "Algorithm 1 steps 4-13",
+      "statement": "Stage 2 releases the encoders and takes the outcome, alignment and invariance steps in turn within each epoch"
+    },
+    {
+      "claim_id": "alg1-modality-dropout",
+      "code_anchors": [
+        "prism.modelling.modality_dropout.draw_dropout_plan",
+        "prism.fitting.loop.apply_dropout"
+      ],
+      "executability": "executable",
+      "kind": "algorithm",
+      "note": "",
+      "paper_location": "Algorithm 1 step 5; Methods Sec. 6.3",
+      "statement": "A mini-batch is drawn with modality dropout applied per observation, so any combination of streams a site can acquire is estimable"
+    },
+    {
+      "claim_id": "alg1-early-stop",
+      "code_anchors": [
+        "prism.fitting.stages.development_split",
+        "prism.fitting.stages.fit"
+      ],
+      "executability": "executable",
+      "kind": "algorithm",
+      "note": "",
+      "paper_location": "Algorithm 1 step 12",
+      "statement": "Early stopping is taken on the development split only"
+    },
+    {
+      "claim_id": "alg1-emission",
+      "code_anchors": [
+        "prism.emission.programmes.emit_programmes",
+        "prism.emission.intervals.leave_one_site_out_folds",
+        "prism.modelling.programme_head.select_support"
+      ],
+      "executability": "executable",
+      "kind": "algorithm",
+      "note": "",
+      "paper_location": "Algorithm 1 steps 15-16",
+      "statement": "The programme is the support of the decoder, the signs come from its coefficients, and the effects and intervals come from the interval head validated leave-one-site-out"
+    },
+    {
+      "claim_id": "align-two-halves",
+      "code_anchors": [
+        "prism.objectives.alignment.AlignmentLoss.matching",
+        "prism.objectives.alignment.AlignmentLoss.second_moment"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.4",
+      "statement": "The alignment term pulls the fused region representation towards the metabolite block and matches their second-moment structure, because matching alone admits axes with no metabolic meaning"
+    },
+    {
+      "claim_id": "invariance-two-readings",
+      "code_anchors": [
+        "prism.objectives.invariance.VariancePenalty",
+        "prism.objectives.invariance.AdversarialPenalty",
+        "prism.modelling.assembly.reverse_gradient"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.5; Table 3 Panel B",
+      "statement": "Two readings of the invariance penalty are implemented: a variance penalty on the between-site covariance and an adversarial penalty through a reversed gradient"
+    },
+    {
+      "claim_id": "programme-group-penalty",
+      "code_anchors": [
+        "prism.objectives.programme.GroupPenalty",
+        "prism.cohort.lexicon.Lexicon.index_blocks"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.6",
+      "statement": "Sparsity is imposed by a group penalty over metabolically coherent blocks rather than element by element"
+    },
+    {
+      "claim_id": "interval-nominal-coverage",
+      "code_anchors": [
+        "prism.modelling.interval_head.IntervalHead",
+        "prism.emission.intervals.shift_reading"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "the nominal level is printed as 0.90 in the table columns; the sentence that describes the head also prints a coverage word the table does not use, so the table value governs",
+      "paper_location": "Methods Sec. 6.6; Table 8",
+      "statement": "The interval head targets a fixed nominal reliability, exact under no shift and measured again under shift"
+    },
+    {
+      "claim_id": "table1-predictors",
+      "code_anchors": [
+        "prism.assessment.harness.table1_predictors",
+        "prism.reference.tables.TABLE1_ROWS"
+      ],
+      "executability": "blocked-private-cohort",
+      "kind": "table",
+      "note": "the retrospective and silent arms are held by the participating institutions",
+      "paper_location": "Results Sec. 2.1; Table 1",
+      "statement": "Nine predictors are compared across internal, external and low-resource partitions on discrimination, calibration, Brier score and decision-curve net benefit"
+    },
+    {
+      "claim_id": "table2-ablation",
+      "code_anchors": [
+        "prism.assessment.ablation.ABLATIONS",
+        "prism.assessment.ablation.permute_metabolite_rows",
+        "prism.assessment.ablation.randomise_site_labels",
+        "prism.assessment.ablation.control_recovery"
+      ],
+      "executability": "blocked-private-cohort",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 2.2; Table 2",
+      "statement": "Nine configurations remove or replace one component of the objective, including two tier-zero controls"
+    },
+    {
+      "claim_id": "table2-super-additivity",
+      "code_anchors": [
+        "prism.statistics.family.synergy_statistic"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 2.2",
+      "statement": "Removing both constraint terms costs more than the sum of the individual removals, which is the super-additivity that carries the architectural reading"
+    },
+    {
+      "claim_id": "table3-transfer-matrix",
+      "code_anchors": [
+        "prism.measurement.transfer.TransferMatrix",
+        "prism.cohort.partitions.fold_by_region"
+      ],
+      "executability": "blocked-private-cohort",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 2.2; Table 3 Panel A",
+      "statement": "A model fitted on one region is evaluated on each other region, and the pooled site-invariant row is reported even where it exceeds a diagonal cell"
+    },
+    {
+      "claim_id": "table3-attribution-probe",
+      "code_anchors": [
+        "prism.measurement.attribution.attribution_row",
+        "prism.measurement.attribution.constraint_reading"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 2.2; Table 3 Panel B",
+      "statement": "A probe trained on the same representations predicts site and region identity, and the constrained configurations suppress that prediction while keeping discrimination"
+    },
+    {
+      "claim_id": "table4-reader-study",
+      "code_anchors": [
+        "prism.measurement.reader.reader_arm_result",
+        "prism.measurement.reader.team_benefit",
+        "prism.measurement.reader.automation_bias_reading",
+        "prism.measurement.reader.inter_reader_table"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 2.3; Table 4",
+      "statement": "Three arms are read on the same cases, and the combination beats both single arms while the overcall rate falls"
+    },
+    {
+      "claim_id": "table5-auxiliary-resources",
+      "code_anchors": [
+        "prism.reference.urls.RESOURCES",
+        "prism.cohort.supply.load_series",
+        "prism.cohort.supply.query_gdc_project"
+      ],
+      "executability": "executable",
+      "kind": "resource",
+      "note": "panel A is not evaluable by design; the annotation columns are marked rather than filled",
+      "paper_location": "Results Sec. 2.5; Table 5",
+      "statement": "Three open-tier resources carry no response annotation and six annotated series carry the auxiliary comparison"
+    },
+    {
+      "claim_id": "table6-cross-domain",
+      "code_anchors": [
+        "prism.measurement.transfer.TransferAdvantage",
+        "prism.measurement.transfer.advantage_reading",
+        "prism.measurement.transfer.probe_only_row"
+      ],
+      "executability": "blocked-private-cohort",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 3.1; Table 6",
+      "statement": "The model transfers without task-specific re-parameterisation to two adjacent tumour types and one non-colorectal setting, and the advantage decays away from the primary task"
+    },
+    {
+      "claim_id": "table7-scaling",
+      "code_anchors": [
+        "prism.measurement.scaling.saturation_fraction",
+        "prism.measurement.scaling.lower_block_saturation",
+        "prism.measurement.scaling.turning_points",
+        "prism.cohort.partitions.training_frame",
+        "prism.cohort.partitions.stratified_supervision_frame"
+      ],
+      "executability": "blocked-private-cohort",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 3.2; Table 7",
+      "statement": "The fitting-fraction curve saturates early while the supervision-fraction curve is still rising, and neither curve is monotone to the reported precision"
+    },
+    {
+      "claim_id": "table7-coherence",
+      "code_anchors": [
+        "prism.measurement.coherence.programme_coherence",
+        "prism.cohort.supervision.region_covariance"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Table 7 note",
+      "statement": "Programme coherence is the agreement between the emitted programme and the metabolite covariance structure of the held-out supervised region"
+    },
+    {
+      "claim_id": "table8-ensembling",
+      "code_anchors": [
+        "prism.fitting.ensemble.build_seed_ensemble",
+        "prism.fitting.ensemble.regime_ensemble",
+        "prism.fitting.ensemble.choose_configuration",
+        "prism.measurement.uncertainty.aggregation_reading"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Results Sec. 3.3; Table 8",
+      "statement": "Seed aggregation moves discrimination slightly while helping calibration and narrowing intervals; the regime ensemble is the auxiliary comparison"
+    },
+    {
+      "claim_id": "table8-coverage",
+      "code_anchors": [
+        "prism.emission.intervals.coverage_of",
+        "prism.emission.intervals.pooled_coverage",
+        "prism.modelling.interval_head.report_intervals"
+      ],
+      "executability": "executable",
+      "kind": "table",
+      "note": "",
+      "paper_location": "Table 8; Methods Sec. 6.10",
+      "statement": "Empirical interval coverage is reported next to the mean interval width"
+    },
+    {
+      "claim_id": "stat-delong",
+      "code_anchors": [
+        "prism.statistics.delong.paired_delong",
+        "prism.statistics.delong.structural_components"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.10",
+      "statement": "Differences in discrimination are assessed with the paired DeLong test over the pre-specified comparison set"
+    },
+    {
+      "claim_id": "stat-holm-family",
+      "code_anchors": [
+        "prism.statistics.holm.holm_step_down",
+        "prism.statistics.family.FAMILY",
+        "prism.statistics.holm.exploratory_label"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.10",
+      "statement": "The Holm correction is applied inside one family of five pre-declared contrasts and nothing outside it is corrected"
+    },
+    {
+      "claim_id": "stat-bootstrap-patients",
+      "code_anchors": [
+        "prism.statistics.ci.patient_cluster_bootstrap",
+        "prism.numerics.boot.patient_blocks"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.10",
+      "statement": "Confidence intervals come from bootstrapping at the patient level"
+    },
+    {
+      "claim_id": "stat-null-band",
+      "code_anchors": [
+        "prism.statistics.nullband.NullBand",
+        "prism.statistics.nullband.coverage_failure"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.10; Table 2 caption",
+      "statement": "The null band used to read the ablation table is T = 0.003 as a fraction"
+    },
+    {
+      "claim_id": "stat-equivalence-margin",
+      "code_anchors": [
+        "prism.statistics.equivalence.two_one_sided",
+        "prism.statistics.equivalence.SuccessCriterion",
+        "prism.statistics.equivalence.reachability_check"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.9; Results Sec. 2.1",
+      "statement": "The primary limb of the success criterion is an equivalence claim against a pre-declared margin of 0.015 in the area under the curve"
+    },
+    {
+      "claim_id": "criterion-conjunctive",
+      "code_anchors": [
+        "prism.assessment.protocol.criterion_from_measurements",
+        "prism.assessment.protocol.adjudicate_plan"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.9; Discussion Sec. 4.1",
+      "statement": "The criterion is conjunctive: parity within the margin on the primary partition and superiority on the external partition"
+    },
+    {
+      "claim_id": "conditional-oxygenation",
+      "code_anchors": [
+        "prism.assessment.conditional.conditional_gain",
+        "prism.cohort.pathways.conditional_verdicts",
+        "prism.cohort.pathways.programme_specificity_holds"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Results Sec. 2.1; Discussion Sec. 4.1",
+      "statement": "Entering the oxygenation proxy as a covariate leaves three programmes with incremental value, removes the hypoxia-linked one, and leaves the rest inconclusive"
+    },
+    {
+      "claim_id": "prevalence-rule-in",
+      "code_anchors": [
+        "prism.cohort.prevalence.reported_prevalence_interval",
+        "prism.numerics.operating_point.RuleInProfile"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Results Sec. 2.1",
+      "statement": "The complete response rate is 19.4 per cent with a 95 per cent interval of [18.2, 20.6], rule-in statements are reported as positive predictive values"
+    },
+    {
+      "claim_id": "partition-patient-level",
+      "code_anchors": [
+        "prism.cohort.partitions.assign_layers",
+        "prism.cohort.partitions.check_no_patient_overlap",
+        "prism.cohort.partitions.check_site_boundary"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Results Sec. 2.6",
+      "statement": "Partitioning is at the patient level, sites A-E develop and sites F and G hold out, and no cross-setting number comes from a random patient split inside the sites"
+    },
+    {
+      "claim_id": "perturbation-assay",
+      "code_anchors": [
+        "prism.perturbation.design.IrradiationScheme",
+        "prism.perturbation.design.protocol_gate",
+        "prism.perturbation.clonogenic.read_assay"
+      ],
+      "executability": "design-only",
+      "kind": "protocol",
+      "note": "no assay is run in this release; the design and its guards are implemented",
+      "paper_location": "Methods Sec. 6.7",
+      "statement": "The in-vitro arm uses a multi-dose schedule with the perturbation present before and during irradiation, reports clonogenic survival as a sensitisation ratio, and fixes the anticipated bands before the model output is reviewed"
+    },
+    {
+      "claim_id": "perturbation-flux",
+      "code_anchors": [
+        "prism.perturbation.flux.isotope_fraction",
+        "prism.perturbation.flux.direction_agreement"
+      ],
+      "executability": "design-only",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.7",
+      "statement": "The mechanistic secondary output is stable-isotope-resolved flux, read for whether the process advances as anticipated"
+    },
+    {
+      "claim_id": "perturbation-no-line-swap",
+      "code_anchors": [
+        "prism.perturbation.falsify.count_failures",
+        "prism.perturbation.falsify.line_substitution_requested"
+      ],
+      "executability": "executable",
+      "kind": "protocol",
+      "note": "",
+      "paper_location": "Methods Sec. 6.7",
+      "statement": "A line that fails the programme is counted as a failed prediction rather than replaced by a more convenient line"
+    },
+    {
+      "claim_id": "training-hyperparameters-absent",
+      "code_anchors": [
+        "prism.provenance.config.ORIGIN_ENGINEERING_DEFAULT",
+        "configs/experiment/main.yaml"
+      ],
+      "executability": "not-reported-in-article",
+      "kind": "setting",
+      "note": "the article prints no learning rate, batch size, epoch count or weight, so every such value in this release is an engineering default recorded as one",
+      "paper_location": "Algorithm 1 caption",
+      "statement": "No experiment numeric value appears in the algorithm; all hyper-parameters are declared before any model is fitted"
+    },
+    {
+      "claim_id": "compute-profile-absent",
+      "code_anchors": [
+        "prism.provenance.config.TrainConfig",
+        "README.md"
+      ],
+      "executability": "not-reported-in-article",
+      "kind": "setting",
+      "note": "",
+      "paper_location": "no compute statement in the article",
+      "statement": "The compute the study used is not reported"
+    },
+    {
+      "claim_id": "cohort-assembly-section",
+      "code_anchors": [
+        "prism.cohort.archive.read_archive",
+        "prism.cohort.strata.DEFAULT_REGISTRY"
+      ],
+      "executability": "not-reported-in-article",
+      "kind": "ambiguity",
+      "note": "the site-to-region assignment and the response-endpoint definition are reconstructed from Results Sec. 2.6 and recorded as a reconstruction",
+      "paper_location": "Methods Sec. 6.2",
+      "statement": "The section that would give the cohort assembly, endpoints and provenance carries a heading and no text"
+    },
+    {
+      "claim_id": "reported-vocabulary-absent",
+      "code_anchors": [
+        "prism.cohort.lexicon.BLOCK_BY_PROGRAMME",
+        "prism.cohort.lexicon.default_lexicon"
+      ],
+      "executability": "not-reported-in-article",
+      "kind": "ambiguity",
+      "note": "the vocabulary is the named intermediates of the six programmes the article describes",
+      "paper_location": "Methods Sec. 6.1 and Sec. 6.6 name the vocabulary but not its contents",
+      "statement": "The metabolite vocabulary size and its blocks are not printed"
+    },
+    {
+      "claim_id": "internal-contradiction-decoder-section",
+      "code_anchors": [
+        "prism.objectives.programme.GroupPenalty"
+      ],
+      "executability": "not-reported-in-article",
+      "kind": "ambiguity",
+      "note": "the reference is read as Methods Sec. 6.6, which is where the decoder is defined",
+      "paper_location": "Methods Sec. 6.4 refers to a section 9.0 for the sparse decoder",
+      "statement": "The decoder section is cross-referenced by a section number the article does not contain"
+    }
+  ],
+  "deviations": [
+    {
+      "call_site": "prism/provenance/config.py:ORIGIN_ENGINEERING_DEFAULT",
+      "handling": "Every numerical hyper-parameter in this release is an engineering default: the article states that no experiment numeric value appears in its algorithm and prints none. The defaults are declared in configs/ and recorded per field in the run header, so a reader can see which values the article fixed and which it did not.",
+      "item": "no hyper-parameter is printed anywhere in the article",
+      "paper_section": "Algorithm 1 caption; Methods Sec. 6.1"
+    },
+    {
+      "call_site": "prism/cohort/archive.py:read_archive",
+      "handling": "the cohort assembly is reconstructed from Results Sec. 2.6 and the reported record counts, and every reconstructed field is marked as such in the claim map",
+      "item": "the cohort, its endpoints and its provenance have no section text",
+      "paper_section": "Methods Sec. 6.2"
+    },
+    {
+      "call_site": "prism/cohort/strata.py:DEFAULT_REGISTRY",
+      "handling": "recorded as reconstructions with LOW confidence in the claim map, rather than presented as reported quantities",
+      "item": "the site-to-region assignment, the metabolite vocabulary and two programme names are not printed",
+      "paper_section": "Results Sec. 2.6; Methods Sec. 6.1, Sec. 6.6"
+    },
+    {
+      "call_site": "prism/objectives/programme.py",
+      "handling": "read as Methods Sec. 6.6, where the decoder is defined",
+      "item": "the decoder section is cross-referenced by a section number the article does not contain",
+      "paper_section": "Methods Sec. 6.4"
+    },
+    {
+      "call_site": "code/checks/manuscript_audit.py:check_null_band_claim",
+      "handling": "the arithmetic check reports two further rows inside the band; the discrepancy is left standing and reported rather than smoothed",
+      "item": "the ablation caption exempts only the interval-head row from the null band",
+      "paper_section": "Table 2 caption"
+    },
+    {
+      "call_site": "code/checks/manuscript_audit.py:check_diagonal_maximality",
+      "handling": "the arithmetic check finds every diagonal at the row maximum and the pooled row below every diagonal; reported as a discrepancy",
+      "item": "the transfer-matrix caption reads a diagonal that is not uniformly the maximum",
+      "paper_section": "Table 3 Panel A caption"
+    },
+    {
+      "call_site": "code/checks/manuscript_audit.py:check_scaling_claims",
+      "handling": "the arithmetic check finds the maximum at the largest fraction; reported",
+      "item": "the scaling prose places the maximum external performance at the smallest fitting fraction",
+      "paper_section": "Results Sec. 3.2; Table 7"
+    },
+    {
+      "call_site": "code/checks/manuscript_audit.py:check_cross_domain_prose",
+      "handling": "both sequences are reported side by side",
+      "item": "the cross-domain prose prints a third advantage the table does not carry",
+      "paper_section": "Results Sec. 3.1; Table 6"
+    },
+    {
+      "call_site": "code/checks/manuscript_audit.py:check_cross_domain_prose",
+      "handling": "both sequences are reported side by side",
+      "item": "the cross-domain prose prints a third advantage the table does not carry",
+      "paper_section": "Results Sec. 3.1; Table 6"
+    },
+    {
+      "call_site": "README.md",
+      "handling": "the release reports its own measured footprint and does not present an estimate as the study's",
+      "item": "the compute profile is absent",
+      "paper_section": "no compute statement in the article"
+    }
+  ],
+  "layer_status": {
+    "code": "PASS",
+    "manuscript_arithmetic": "FAIL"
+  },
+  "overall_status": "PARTIALLY_VERIFIED",
+  "probe_outcomes": [
+    {
+      "check": "config-intake",
+      "detail": "the margin, null band, family size and coverage target are carried from the configuration into the objects that use them",
+      "evidence": {
+        "effective_batch": 32,
+        "equivalence_margin": 0.015,
+        "family_size": 5,
+        "interval_nominal_coverage": 0.9,
+        "null_band": 0.003
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "partitioning",
+      "detail": "no patient straddles two layers, no holdout site appears in the development arm, a staged archive reads back unchanged, and an absent archive is reported rather than substituted",
+      "evidence": {
+        "absent_archive_reported": true,
+        "archive_round_trip": true,
+        "layers": {
+          "development": 280,
+          "external": 68,
+          "internal": 52,
+          "silent": 0
+        },
+        "patients": {
+          "development": 140,
+          "external": 34,
+          "internal": 26,
+          "silent": 0
+        },
+        "prevalence_reconstruction_matches": true,
+        "site_boundary_holds": true,
+        "supervision_fraction": 0.6
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "batch-shapes",
+      "detail": "every stream arrives with the shape its configuration declares and one row per observation, and the presence indicator covers every configured modality",
+      "evidence": {
+        "declared_shapes": {
+          "ct": [
+            1,
+            4,
+            6,
+            6
+          ],
+          "histology": [
+            32
+          ],
+          "labs": [
+            12
+          ],
+          "mri": [
+            1,
+            3,
+            6,
+            6
+          ]
+        },
+        "present_shape": [
+          32,
+          4
+        ],
+        "rows": 32,
+        "streams": {
+          "ct": [
+            32,
+            1,
+            4,
+            6,
+            6
+          ],
+          "histology": [
+            32,
+            32
+          ],
+          "labs": [
+            32,
+            12
+          ],
+          "mri": [
+            32,
+            1,
+            3,
+            6,
+            6
+          ]
+        },
+        "vocabulary": 48
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "forward-backward",
+      "detail": "all four terms of Eq. (1) evaluate to finite scalars and the backward pass reaches the encoder parameters",
+      "evidence": {
+        "all_finite": true,
+        "encoder_tensors_with_gradient": 38,
+        "terms": {
+          "alignment": 10.991323,
+          "group": 0.194531,
+          "invariance": 0.442581,
+          "matching": 9.993546,
+          "outcome": 0.577237,
+          "programme": 0.285885,
+          "second_moment": 0.997778,
+          "sign": 0.091354
+        }
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "optimiser-step",
+      "detail": "a step moves the parameters and lowers the loss on the batch the gradient came from",
+      "evidence": {
+        "loss_after": 0.3865802586078644,
+        "loss_before": 1.1851820945739746,
+        "weight_mass_after": 200.44989013671875,
+        "weight_mass_before": 200.42764282226562
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "single-batch-overfit",
+      "detail": "60 steps on one batch drive the loss down by more than half, so the forward, loss, backward and step path is connected",
+      "evidence": {
+        "batch_accuracy": 1.0,
+        "first_loss": 0.9142438769340515,
+        "last_loss": 1.6095949831651524e-05,
+        "ratio": 1.7605750760540885e-05,
+        "steps": 60
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "checkpoint-roundtrip",
+      "detail": "a checkpoint restores the exact weights into a freshly built model and carries the seed and the epoch it was written at",
+      "evidence": {
+        "digest_after": "17815f801bdd26e8",
+        "digest_before": "17815f801bdd26e8",
+        "digest_matches": true,
+        "epoch": 3,
+        "seed_restored": 7,
+        "sidecar_matches": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "smoke-loop",
+      "detail": "both stages complete, the feasibility ledger records a verdict per stage-two epoch, and a checkpoint is written",
+      "evidence": {
+        "checkpoints": [
+          "probe-smoke.member00.best.pt",
+          "probe-smoke.member00.pt"
+        ],
+        "development_rows": 280,
+        "stage1_dev_auc": [
+          0.5166666666666667,
+          0.5111111111111111
+        ],
+        "stage1_epochs": 2,
+        "stage1_loss_first": 0.6353643927723169,
+        "stage2_dev_auc": [
+          0.5111111111111111,
+          0.5111111111111111
+        ],
+        "stage2_epochs": 2,
+        "vetoes": 2
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "variance-penalty-direction",
+      "detail": "the penalty is lower once the site means are removed and differs again when the site labels are shuffled, so it responds to the setting rather than to the scale alone",
+      "evidence": {
+        "penalty_after_recentring": 5.40067868356163e-14,
+        "penalty_before": 1.2432681322097778,
+        "reduction": 1.2432681322097239,
+        "shuffled_labels_penalty": 0.03182457387447357
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "gradient-reversal",
+      "detail": "the reversed branch leaves the forward value untouched and negates the gradient exactly",
+      "evidence": {
+        "forward_value_unchanged": true,
+        "plain_grad_norm": 5.042367458343506,
+        "reversed_grad_norm": 5.042367458343506,
+        "signs_opposite": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "alignment-terms",
+      "detail": "the matching half separates a row permutation while staying non-negative, and the second-moment half separates an axis permutation whose row pairs are untouched",
+      "evidence": {
+        "matching_is_non_negative": true,
+        "matching_matched": 0.01728634350001812,
+        "matching_row_scrambled": 10.318896293640137,
+        "second_moment_column_scrambled": 0.5731669068336487,
+        "second_moment_matched": 0.23185613751411438,
+        "second_moment_row_scrambled": 1.4820832916484505e-07
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "modality-dropout",
+      "detail": "a stream the site cannot acquire is never enabled and every row keeps at least one stream",
+      "evidence": {
+        "dropped_streams": 80,
+        "every_row_keeps_a_stream": true,
+        "low_resource_rows": 4,
+        "no_absent_stream_switched_on": true,
+        "rescued_rows": 5,
+        "rows": 64
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "programme-emission",
+      "detail": "every emitted programme keeps between one and four entries per block, carries unit signs, and reports an ordered interval for each supported programme",
+      "evidence": {
+        "block_count": 6,
+        "effects_per_statement": [
+          6,
+          6,
+          6,
+          6
+        ],
+        "intervals_are_ordered": true,
+        "signs_are_unit": true,
+        "support_max": 24,
+        "support_min": 21
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "interval-coverage",
+      "detail": "the coverage read-out equals an independent count on the same intervals and halving the width lowers coverage, so the column responds to the intervals it describes",
+      "evidence": {
+        "empirical_half_width": 0.595,
+        "empirical_nominal_width": 0.8991666666666667,
+        "half_width_ratio": 0.5,
+        "independent_coverage": 0.8991666666666667,
+        "mean_interval_width": 0.6579414507805889,
+        "nominal": 0.9
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "independent-metrics",
+      "detail": "the released area under the curve agrees to machine precision with a concordant-pair count and with an empirical-curve integral on the same scores and ties",
+      "evidence": {
+        "abs_delta": {
+          "pairs": 0.0,
+          "trapezoid": 2.220446049250313e-16
+        },
+        "independent_pairs": 0.37833714721586575,
+        "independent_trapezoid": 0.378337147215866,
+        "released": 0.37833714721586575
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "paired-comparison",
+      "detail": "the paired contrast reproduces both areas from the structural components and agrees with an independent pair count, and the patient bootstrap resamples whole patients",
+      "evidence": {
+        "bootstrap_difference_interval": [
+          0.02641689575586071,
+          0.23619440029865588
+        ],
+        "bootstrap_observed": 0.1303168402777778,
+        "independent_auc_a": 0.8230251736111112,
+        "independent_difference": 0.1303168402777778,
+        "n_patients": 100,
+        "paired_auc_a": 0.8230251736111112,
+        "paired_difference": 0.1303168402777778,
+        "patient_bootstrap_half_width": 0.2023064375811261
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "holm-correction",
+      "detail": "the step-down adjustment matches an independent implementation value for value and rejects the same contrasts",
+      "evidence": {
+        "independent": [
+          0.005,
+          0.032,
+          0.06,
+          0.08,
+          0.3
+        ],
+        "max_delta": 0.0,
+        "raw": [
+          0.001,
+          0.008,
+          0.02,
+          0.04,
+          0.3
+        ],
+        "rejected": [
+          "c0",
+          "c1"
+        ],
+        "released": [
+          0.005,
+          0.032,
+          0.06,
+          0.08,
+          0.3
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "equivalence-test",
+      "detail": "the parity difference is inside the margin, the conjunctive criterion needs both limbs, and a margin narrower than its own interval is reported as unresolvable",
+      "evidence": {
+        "criterion_satisfied": true,
+        "equivalent": true,
+        "external_limb": true,
+        "interval": [
+          -0.013839855938160216,
+          0.0018398559381602158
+        ],
+        "margin_resolvable_at_0.004": 1.0,
+        "margin_resolvable_at_0.020": 0.0,
+        "margin_used": 0.4,
+        "p_value": 0.0122244726550447,
+        "primary_limb": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "conditional-value",
+      "detail": "the rule maps a gain above the band to retained, a non-positive gain to lost and a gain inside the band to inconclusive; on measured columns, the three carrying signal above the proxy are retained and the three carrying none are not",
+      "evidence": {
+        "gains": {
+          "P1": 0.06187,
+          "P2": 0.06187,
+          "P3": 0.06187,
+          "P4": 0.00033,
+          "P5": -0.00016,
+          "P6": -0.00023
+        },
+        "rule_verdicts": {
+          "P1": "retains-incremental-value",
+          "P2": "retains-incremental-value",
+          "P3": "loses-conditional-value",
+          "P4": "loses-conditional-value",
+          "P5": "retains-incremental-value",
+          "P6": "inconclusive"
+        },
+        "summary": {
+          "n_inconclusive": 1.0,
+          "n_lost": 2.0,
+          "n_programmes": 6.0,
+          "n_retained": 3.0,
+          "null_band": 0.003,
+          "retained_minus_lost": 1.0,
+          "substitution_reading": "the programme is partly, but not wholly, a re-description of oxygenation"
+        },
+        "verdicts": {
+          "P1": "retains-incremental-value",
+          "P2": "retains-incremental-value",
+          "P3": "retains-incremental-value",
+          "P4": "inconclusive",
+          "P5": "loses-conditional-value",
+          "P6": "loses-conditional-value"
+        }
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "assay-protocol",
+      "detail": "a two-dose schedule and a protocol frozen after the model review are both refused, and the sensitisation ratio is read against the pre-declared band",
+      "evidence": {
+        "has_falsified_outcome": true,
+        "has_supported_outcome": true,
+        "late_protocol_freeze_refused": true,
+        "line_substitution_detected": false,
+        "outcomes": {
+          "n_falsified": 5.0,
+          "n_inconclusive": 0.0,
+          "n_programmes": 6.0,
+          "n_supported": 1.0,
+          "supported_fraction": 0.16666666666666666
+        },
+        "sensitisation_ratio": 0.7,
+        "single_dose_schedule_refused": true,
+        "verdict_set": [
+          "falsified",
+          "supported"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "flux-direction",
+      "detail": "every labelling shift whose direction matches the emitted sign is counted, and a shift against the sign is not",
+      "evidence": {
+        "agreement": {
+          "agreement_fraction": 1.0,
+          "log2_median_shift": 0.584962500721156,
+          "median_ratio": 1.4999999999999998,
+          "n_agreeing": 3.0,
+          "n_metabolites": 3.0
+        },
+        "directions_agree": [
+          true,
+          true,
+          true
+        ],
+        "ratios": {
+          "glutamine": 1.5,
+          "lactate": 2.0,
+          "palmitate": 0.5
+        }
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "ablation-matrix",
+      "detail": "each removal row zeroes exactly the term it names, the metabolite control permutes rows inside a region without changing the multiset, and the site control preserves the label histogram",
+      "evidence": {
+        "minus_alignment_lambda": 0.0,
+        "minus_both_lambda": [
+          0.0,
+          0.0
+        ],
+        "minus_invariance_lambda": 0.0,
+        "rows": 9,
+        "rows_actually_moved": true,
+        "site_histogram_preserved": true,
+        "tier_zero_rows": 2,
+        "within_region_row_multiset_preserved": true
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "attribution-and-transfer",
+      "detail": "a representation carrying site offsets is separated from one that is not, the constrained row loses most of that excess, and the transfer matrix reports a retention factor below one off the diagonal",
+      "evidence": {
+        "diagonal": [
+          0.9,
+          0.9,
+          0.9,
+          0.9
+        ],
+        "reading": {
+          "auc_retained": -0.010000000000000009,
+          "region_accuracy_drop": 0.25416666666666665,
+          "site_above_chance_after": 0.12083333333333335,
+          "site_accuracy_drop": 0.25416666666666665
+        },
+        "retention": [
+          0.9,
+          0.9333333333333333,
+          0.9333333333333333,
+          0.9
+        ],
+        "site_accuracy_constrained": 0.37083333333333335,
+        "site_accuracy_unconstrained": 0.625,
+        "site_excess_after_constraint": 0.12083333333333335,
+        "smallest_retention": [
+          "R0",
+          0.9
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "reader-and-scaling",
+      "detail": "the three arms order as reported and the combination calls fewer negatives positive; the saturation reduction depends on the tolerance in the expected direction, and both curves show the reported non-monotone step while the lower block is reported as unsaturated",
+      "evidence": {
+        "arm_auc": {
+          "clinician-alone": 0.867634540811501,
+          "clinician-with-model": 0.9392635328982629,
+          "model-alone": 0.8183896087518522
+        },
+        "arm_overcall": {
+          "clinician-alone": 0.24398625429553264,
+          "clinician-with-model": 0.16494845360824742,
+          "model-alone": 0.27147766323024053
+        },
+        "lower_saturated": 0.0,
+        "lower_turning_points": 2.0,
+        "model_alone_above_clinician_alone": false,
+        "saturation_at_0.002": 1.0,
+        "saturation_at_0.05": 0.125,
+        "team_benefit": {
+          "auc_margin": 0.07162899208676188,
+          "beats_both": 0.0,
+          "overcall_reduction": 0.10652920962199311,
+          "sensitivity_margin": 0.01834862385321101,
+          "specificity_margin": -0.07216494845360821
+        },
+        "upper_turning_points": 2.0
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "resource-list",
+      "detail": "the list covers the three open-tier resources, the six annotated series and the extra platform matrices, and every URL is https",
+      "evidence": {
+        "all_https": true,
+        "annotated": 6,
+        "matrix_urls": 8,
+        "resources": 9,
+        "restricted_entries": 3
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    },
+    {
+      "check": "public-resource-read",
+      "detail": "none of the public resources could be reached from this machine, so no count could be checked against the table",
+      "evidence": {
+        "mismatches": [],
+        "reached": {},
+        "unreachable": [
+          "GSE132668: ResourceError",
+          "TCGA-COAD: ResourceError",
+          "TCGA-READ: ResourceError"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "cli-end-to-end",
+      "detail": "the training entry point runs a configured job from a config file and writes its run header, fit summary and checkpoints",
+      "evidence": {
+        "artefacts": [
+          "fit_summary.json",
+          "probe-default.member00.best.pt",
+          "probe-default.member00.pt",
+          "run_header.json"
+        ],
+        "cohort": "fixture records staged as an archive",
+        "returncode": 0,
+        "stderr_tail": [
+          "2026-09-27T09:02:15 INFO    prism.fitting.stages stage 1 finished at dev discrimination 0.5606",
+          "2026-09-27T09:02:15 INFO    prism.fitting.loop probe stage2 epoch 0 windows=7 rows=198 loss=0.17413",
+          "2026-09-27T09:02:15 INFO    prism.cli.train ensemble of 1 members pools 68 held-out rows"
+        ]
+      },
+      "layer": "code-behaviour",
+      "status": "PASS"
+    }
+  ],
+  "producer": "prism.audit.claims",
+  "project_context": {
+    "field_count": 22,
+    "fields": [
+      {
+        "confidence": "HIGH",
+        "location": "Introduction, paragraph beginning 'We introduce Prism'",
+        "name": "project_name",
+        "note": "the article names its own system; the release keeps that name and the repository directory carries the full title",
+        "origin": "manuscript",
+        "value": "prism"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Title; Introduction; Methods Sec. 6.1",
+        "name": "domain",
+        "note": "",
+        "origin": "manuscript",
+        "value": "multimodal oncology representation learning for rectal chemoradiotherapy response"
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Methods Sec. 6.3 describes encoders, pooling, fusion and a gradient reversal layer",
+        "name": "framework",
+        "note": "the article states no framework; the grader-based adversarial reading and the convolutional comparison make a tensor-autodiff stack the only viable reading",
+        "origin": "reconstructed",
+        "value": "PyTorch 2.x with plain torch.nn"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "file naming and the structured Nature-style front matter",
+        "name": "venue",
+        "note": "",
+        "origin": "manuscript",
+        "value": "npj Digital Medicine"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.5; Table 5; Data availability",
+        "name": "primary_datasets",
+        "note": "the clinical arm is held by the participating institutions; the six annotated series and the three open-tier resources are read from their public services",
+        "origin": "manuscript",
+        "value": "nine public resources across the two panels of Table 5, plus the clinical arm the study names but does not publish"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "no training-hardware statement anywhere in the article",
+        "name": "compute_target",
+        "note": "the article reports no GPU type, count, memory or wall clock, and no storage figure; the release therefore reports its own measured footprint rather than an estimate presented as the study's",
+        "origin": "manuscript",
+        "value": "COMPUTE_NOT_REPORTED"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Algorithm 1 caption: no experiment numeric value appears in the algorithm",
+        "name": "hparams_reference",
+        "note": "the caption states that all hyper-parameters are declared before fitting, and none are printed; every learning rate, batch size, epoch count and weight in this release is an engineering default recorded as one in the run header",
+        "origin": "manuscript",
+        "value": "none printed"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "no sibling supplementary file accompanies the manuscript file",
+        "name": "supp_path",
+        "note": "the manuscript is a single 28-page file with no linked supplement",
+        "origin": "reconstructed",
+        "value": "none"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6; Methods Sec. 6.10",
+        "name": "evaluation_unit",
+        "note": "",
+        "origin": "manuscript",
+        "value": "patient"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.1",
+        "name": "prevalence",
+        "note": "reported with a 95 per cent interval of [18.2, 20.6]",
+        "origin": "manuscript",
+        "value": 0.194
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.9; Results Sec. 2.1",
+        "name": "equivalence_margin",
+        "note": "",
+        "origin": "manuscript",
+        "value": 0.015
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.10; Table 2 caption",
+        "name": "null_band",
+        "note": "",
+        "origin": "manuscript",
+        "value": 0.003
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Methods Sec. 6.10",
+        "name": "multiplicity_family",
+        "note": "the five contrasts themselves are not printed; the list is a reconstruction",
+        "origin": "manuscript",
+        "value": 5
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Table 8, empirical-coverage column, read against the interval sentence in Sec. 6.6",
+        "name": "interval_nominal_coverage",
+        "note": "the sentence that describes the interval head also prints a coverage word the table does not use; the table value governs and the discrepancy is recorded",
+        "origin": "manuscript",
+        "value": 0.9
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6",
+        "name": "resource_strata",
+        "note": "",
+        "origin": "manuscript",
+        "value": [
+          "high-resource",
+          "upper-middle-resource",
+          "lower-middle-resource"
+        ]
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.6",
+        "name": "sites",
+        "note": "",
+        "origin": "manuscript",
+        "value": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ]
+      },
+      {
+        "confidence": "LOW",
+        "location": "Results Sec. 2.6 names the sites and the regions but prints no assignment",
+        "name": "site_to_region_assignment",
+        "note": "reconstruction; the stratum of each site follows the modality-count sentence",
+        "origin": "reconstructed",
+        "value": [
+          [
+            "A",
+            "Region I"
+          ],
+          [
+            "B",
+            "Region I"
+          ],
+          [
+            "C",
+            "Region II"
+          ],
+          [
+            "D",
+            "Region III"
+          ],
+          [
+            "E",
+            "Region IV"
+          ],
+          [
+            "F",
+            "Region III"
+          ],
+          [
+            "G",
+            "Region IV"
+          ]
+        ]
+      },
+      {
+        "confidence": "LOW",
+        "location": "Methods Sec. 6.1 names a vocabulary of size q; Sec. 6.6 names the block penalty",
+        "name": "metabolite_vocabulary",
+        "note": "the contents are not printed; the vocabulary is the named intermediates of the six programmes the article describes, and its size is an engineering default",
+        "origin": "reconstructed",
+        "value": "48 entries in six programme blocks"
+      },
+      {
+        "confidence": "MEDIUM",
+        "location": "Results Sec. 2.1 names glycolytic, glutaminolytic, lipid-desaturation and the hypoxia-linked redox programme; Table 7 prints P1-P4",
+        "name": "programme_order",
+        "note": "the last two programme names are reconstructed from the Introduction's list",
+        "origin": "manuscript",
+        "value": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6"
+        ]
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Results Sec. 2.1",
+        "name": "cohort_sizes",
+        "note": "",
+        "origin": "manuscript",
+        "value": {
+          "held_out_records": 3847,
+          "silent_records": 1024
+        }
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Algorithm 1 caption states that no numeric value appears in the algorithm; none is printed anywhere in the article",
+        "name": "engineering_default_values",
+        "note": "each of these is declared in configs/ and recorded in the run header as a default",
+        "origin": "engineering-default",
+        "value": "the two-stage epoch counts, the batch size, the accumulation window, the world size, both learning rates, the weight decay, the warmup fraction, the gradient clip, the precision, the early-stopping patience, the ensemble member count, the modality dropout rate, the three objective weights, the matching temperature, the discrimination floor, the encoder widths and depths, the vocabulary size and the metabolite block contents"
+      },
+      {
+        "confidence": "HIGH",
+        "location": "Data availability",
+        "name": "excluded_from_execution",
+        "note": "",
+        "origin": "manuscript",
+        "value": "the clinical arm, the silent exposure sample and the in-vitro line panel are not redistributable and are not staged here"
+      }
+    ],
+    "project_name": "prism",
+    "project_title": "A Multimodal Foundation Model Charting Metabolic Reprogramming Underlying Radiotherapy Resistance in Colorectal Cancer Across Globally Diverse Care Settings",
+    "unresolved_decisions": [
+      {
+        "candidates": [
+          "engineering defaults recorded per field, as implemented",
+          "a declaration file that a reviewer fills before publication"
+        ],
+        "field": "hparams_reference"
+      },
+      {
+        "candidates": [
+          "report the measured footprint of this release",
+          "leave the field absent until the study reports its own hardware"
+        ],
+        "field": "compute_target"
+      }
+    ]
+  },
+  "verification": {
+    "alg1-early-stop": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "alg1-emission": {
+      "checks": [
+        "programme-emission"
+      ],
+      "detail": "programme-emission: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "alg1-modality-dropout": {
+      "checks": [
+        "modality-dropout"
+      ],
+      "detail": "modality-dropout: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "alg1-stage1-probe": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "alg1-stage2-constrained": {
+      "checks": [
+        "checkpoint-roundtrip",
+        "smoke-loop",
+        "cli-end-to-end"
+      ],
+      "detail": "checkpoint-roundtrip: PASS; smoke-loop: PASS; cli-end-to-end: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "align-two-halves": {
+      "checks": [
+        "alignment-terms"
+      ],
+      "detail": "alignment-terms: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "cohort-assembly-section": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "compute-profile-absent": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "conditional-oxygenation": {
+      "checks": [
+        "conditional-proxy-shift",
+        "conditional-value"
+      ],
+      "detail": "conditional-proxy-shift: PASS; conditional-value: PASS",
+      "layers": [
+        "code-behaviour",
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "criterion-conjunctive": {
+      "checks": [
+        "criterion-arithmetic"
+      ],
+      "detail": "criterion-arithmetic: PASS",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "eq1-objective": {
+      "checks": [
+        "batch-shapes",
+        "forward-backward",
+        "optimiser-step",
+        "single-batch-overfit"
+      ],
+      "detail": "batch-shapes: PASS; forward-backward: PASS; optimiser-step: PASS; single-batch-overfit: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "eq2-feasibility": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "internal-contradiction-decoder-section": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "interval-nominal-coverage": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "invariance-two-readings": {
+      "checks": [
+        "variance-penalty-direction",
+        "gradient-reversal"
+      ],
+      "detail": "variance-penalty-direction: PASS; gradient-reversal: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "partition-patient-level": {
+      "checks": [
+        "partitioning"
+      ],
+      "detail": "partitioning: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "perturbation-assay": {
+      "checks": [
+        "assay-protocol"
+      ],
+      "detail": "assay-protocol: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "perturbation-flux": {
+      "checks": [
+        "flux-direction"
+      ],
+      "detail": "flux-direction: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "perturbation-no-line-swap": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "prevalence-rule-in": {
+      "checks": [
+        "prevalence-interval",
+        "prevalence-dependence"
+      ],
+      "detail": "prevalence-interval: PASS; prevalence-dependence: PASS",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "programme-group-penalty": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "reported-vocabulary-absent": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "stat-bootstrap-patients": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "stat-delong": {
+      "checks": [
+        "independent-metrics",
+        "paired-comparison"
+      ],
+      "detail": "independent-metrics: PASS; paired-comparison: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "stat-equivalence-margin": {
+      "checks": [
+        "equivalence-test"
+      ],
+      "detail": "equivalence-test: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "stat-holm-family": {
+      "checks": [
+        "holm-correction"
+      ],
+      "detail": "holm-correction: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "stat-null-band": {
+      "checks": [
+        "null-band-exemptions"
+      ],
+      "detail": "null-band-exemptions: FAIL",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "FAIL"
+    },
+    "table1-predictors": {
+      "checks": [
+        "table1-partition-ordering"
+      ],
+      "detail": "table1-partition-ordering: PASS",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "table2-ablation": {
+      "checks": [
+        "tier-zero-controls",
+        "ablation-matrix"
+      ],
+      "detail": "tier-zero-controls: PASS; ablation-matrix: PASS",
+      "layers": [
+        "code-behaviour",
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "table2-super-additivity": {
+      "checks": [
+        "component-synergy",
+        "component-synergy-prose"
+      ],
+      "detail": "component-synergy: PASS; component-synergy-prose: PASS",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "table3-attribution-probe": {
+      "checks": [
+        "attribution-and-transfer"
+      ],
+      "detail": "attribution-and-transfer: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "table3-transfer-matrix": {
+      "checks": [
+        "cross-region-retention",
+        "transfer-diagonal-maximality"
+      ],
+      "detail": "cross-region-retention: FAIL; transfer-diagonal-maximality: FAIL",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "FAIL"
+    },
+    "table4-reader-study": {
+      "checks": [
+        "reader-arm-ordering",
+        "rule-in-value-at-prevalence",
+        "reader-and-scaling"
+      ],
+      "detail": "reader-arm-ordering: PASS; rule-in-value-at-prevalence: PASS; reader-and-scaling: PASS",
+      "layers": [
+        "code-behaviour",
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "table5-auxiliary-resources": {
+      "checks": [
+        "resource-list",
+        "public-resource-read"
+      ],
+      "detail": "resource-list: PASS; public-resource-read: BLOCKED",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "BLOCKED"
+    },
+    "table6-cross-domain": {
+      "checks": [
+        "cross-domain-advantage-prose"
+      ],
+      "detail": "cross-domain-advantage-prose: FAIL",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "FAIL"
+    },
+    "table7-coherence": {
+      "checks": [
+        "not-executed"
+      ],
+      "detail": "not-executed: NOT_RUN",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "NOT_RUN"
+    },
+    "table7-scaling": {
+      "checks": [
+        "scaling-saturation"
+      ],
+      "detail": "scaling-saturation: FAIL",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "FAIL"
+    },
+    "table8-coverage": {
+      "checks": [
+        "interval-coverage"
+      ],
+      "detail": "interval-coverage: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    },
+    "table8-ensembling": {
+      "checks": [
+        "ensemble-reading"
+      ],
+      "detail": "ensemble-reading: PASS",
+      "layers": [
+        "manuscript-arithmetic"
+      ],
+      "status": "PASS"
+    },
+    "training-hyperparameters-absent": {
+      "checks": [
+        "config-intake"
+      ],
+      "detail": "config-intake: PASS",
+      "layers": [
+        "code-behaviour"
+      ],
+      "status": "PASS"
+    }
+  }
+}

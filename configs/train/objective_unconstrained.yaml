@@ -1,0 +1,11 @@
+# Objective with the invariance penalty removed, for the equally capable unconstrained comparator.
+# Ref: Methods Sec. 6.9 -- the primary limb of the criterion compares the constrained configuration
+# with its counterpart of the same capacity, so only this one weight changes.
+lambda_alignment: 1.0
+lambda_invariance: 0.0
+lambda_programme: 0.1
+lambda_sign: 0.05
+covariance_weight: 1.0
+matching_temperature: 0.1
+invariance_mode: variance
+group_penalty: 1.0

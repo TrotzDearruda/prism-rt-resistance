@@ -1,0 +1,9 @@
+# Runtime requirements, pinned to the ranges the release is tested against.
+# Ref: Methods Sec. 6.3 for the encoders and Sec. 6.5 for the reversed-gradient reading; the article
+# names no framework, and a tensor autograd stack is what those two require.
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+torch>=2.2,<3
+PyYAML>=6.0,<7
+pandas>=2.1,<3

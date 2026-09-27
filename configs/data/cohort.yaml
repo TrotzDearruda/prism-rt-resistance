@@ -1,0 +1,10 @@
+# Cohort definition. Every value here is printed in the article; nothing in this block is a default.
+# Ref: Results Sec. 2.1 (record counts and response rate), Sec. 2.6 (sites, regions, resource strata).
+n_records: 4871
+n_silent: 1024
+prevalence: 0.194
+prevalence_ci: [0.182, 0.206]
+sites: [A, B, C, D, E, F, G]
+development_sites: [A, B, C, D, E]
+holdout_sites: [F, G]
+regions: [Region I, Region II, Region III, Region IV]

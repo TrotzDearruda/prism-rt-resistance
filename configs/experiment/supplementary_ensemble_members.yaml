@@ -1,0 +1,12 @@
+# Supplementary experiment: the ensemble comparison.
+# Ref: Results Sec. 3.3; Table 8. The member count is set per run with --members.
+name: supplementary_ensemble_members
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the sweep is applied by overriding a single key at launch

@@ -1,0 +1,12 @@
+# Supplementary experiment: the lower block of the scaling table.
+# Ref: Results Sec. 3.2; Table 7 lower block. The fraction of records carrying spatially resolved supervision is swept by prism.cohort.partitions.stratified_supervision_frame.
+name: supplementary_scaling_supervision_fraction
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the sweep is applied by overriding a single key at launch

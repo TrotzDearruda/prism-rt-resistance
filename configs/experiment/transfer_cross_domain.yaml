@@ -1,0 +1,13 @@
+# Cross-domain transfer without task-specific re-parameterisation.
+# Ref: Results Sec. 3.1; Table 6.
+name: transfer_cross_domain
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the adjacent and non-colorectal settings are named by the article; the cohorts themselves are not
+    redistributable, so this entry point is configured but cannot be executed here

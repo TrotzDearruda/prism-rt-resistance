@@ -1,0 +1,25 @@
+# Two-stage schedule, optimiser and the pre-declared design constants.
+# Ref: Algorithm 1 (the two stages) and Methods Sec. 6.9-6.10. The four constants that govern the
+# reported decisions -- the equivalence margin, the null band, the family size and the interval
+# coverage target -- are printed in the article and are reproduced exactly. Every schedule value is
+# an engineering default: the article states that no experiment numeric value appears in its algorithm.
+stage1_epochs: 5
+stage2_epochs: 30
+batch_size: 32
+grad_accum: 2
+world_size: 8
+lr_head: 1.0e-3
+lr_encoder: 1.0e-4
+weight_decay: 0.05
+warmup_fraction: 0.05
+grad_clip: 1.0
+precision: bf16
+patience: 8
+seed: 20240921
+ensemble_members: 10
+modality_dropout: 0.30
+discrimination_floor: 0.80
+equivalence_margin: 0.015
+null_band: 0.003
+multiplicity_family: 5
+interval_nominal_coverage: 0.90

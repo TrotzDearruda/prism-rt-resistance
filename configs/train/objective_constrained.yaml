@@ -1,0 +1,11 @@
+# Objective of Eq. (1) with both constraint terms present.
+# Ref: Methods Sec. 6.1 Eq. (1) and Sec. 6.5. The three weights and the matching temperature are
+# declared before fitting and are not printed in the article, so they are engineering defaults.
+lambda_alignment: 1.0
+lambda_invariance: 0.5
+lambda_programme: 0.1
+lambda_sign: 0.05
+covariance_weight: 1.0
+matching_temperature: 0.1
+invariance_mode: variance
+group_penalty: 1.0

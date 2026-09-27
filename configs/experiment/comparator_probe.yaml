@@ -1,0 +1,12 @@
+# The frozen-representation probe, which isolates what pretraining alone transfers.
+# Ref: Table 1, row 'Foundation model, linear probe'; Table 6, column 'Linear probe only'.
+name: comparator_probe
+arm: backbone-only
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_unconstrained
+train: constrained
+notes:
+  - the probe is fitted in closed form, so this arm carries no optimisation schedule of its own

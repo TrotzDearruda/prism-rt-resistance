@@ -1,0 +1,13 @@
+# Ablation row: the pretrained representation read without any constrained component.
+# Ref: Table 2, last row; Table 1, row 'Foundation model, full fine-tune'.
+# Ref: Table 2 caption -- the null band is 0.003 and this row is read against the full configuration.
+name: ablation_backbone_only_no_constraint
+arm: backbone-only
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_unconstrained
+train: constrained
+notes:
+  - every value other than the ablation itself is the primary configuration's value

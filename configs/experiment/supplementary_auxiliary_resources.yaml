@@ -1,0 +1,12 @@
+# Supplementary experiment: the auxiliary external comparison.
+# Ref: Results Sec. 2.5; Table 5. Panel A resources carry no response annotation and the performance columns are marked rather than estimated.
+name: supplementary_auxiliary_resources
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the sweep is applied by overriding a single key at launch

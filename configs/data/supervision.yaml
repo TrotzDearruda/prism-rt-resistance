@@ -1,0 +1,7 @@
+# Metabolite supervision coverage.
+# Ref: Methods Sec. 6.4 and Table 7: the alignment term consumes a fraction of records that carry
+# spatially resolved metabolites, and that fraction is the axis of the lower block of the scaling
+# table. The values below are engineering defaults, not reported quantities.
+fraction: 0.35
+block_coherence: 0.60
+noise: 0.40

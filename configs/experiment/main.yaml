@@ -1,0 +1,13 @@
+# Primary result of the article: the constrained configuration, ten-member seed ensemble.
+# Ref: Results Sec. 2.1 for the reported configuration and Table 8 for the ensemble.
+name: main
+arm: constrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_constrained
+train: constrained
+notes:
+  - the margin, the null band, the family size and the coverage target are the article's values
+  - every schedule value is an engineering default and is recorded as one in the run header

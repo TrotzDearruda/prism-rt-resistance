@@ -1,0 +1,12 @@
+# The equally capable unconstrained comparator that the primary limb is tested against.
+# Ref: Methods Sec. 6.9; Table 1, row 'Prism, unconstrained'.
+name: comparator_unconstrained
+arm: unconstrained
+cohort: cohort
+supervision: supervision
+vocabulary: vocabulary
+model: backbone
+objective: objective_unconstrained
+train: constrained
+notes:
+  - identical to main except that the invariance penalty carries no weight

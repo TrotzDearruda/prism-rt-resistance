@@ -1,0 +1,14 @@
+# Metabolite vocabulary and its programme blocks.
+# Ref: Methods Sec. 6.6 -- sparsity is imposed over metabolically coherent blocks rather than
+# element-wise, so each programme needs one block and the blocks partition the vocabulary. The
+# article names a vocabulary of size q and does not print it, so both the size and the contents are
+# engineering defaults taken from the named intermediates of the six programmes it describes.
+size: 48
+blocks:
+  - [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  - [12, 13, 14, 15, 16, 17, 18, 19]
+  - [20, 21, 22, 23, 24, 25, 26, 27]
+  - [28, 29, 30, 31, 32, 33]
+  - [34, 35, 36, 37, 38, 39, 40, 41]
+  - [42, 43, 44, 45, 46, 47]
+programme_ids: [P1, P2, P3, P4, P5, P6]

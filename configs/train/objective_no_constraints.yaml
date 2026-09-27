@@ -1,0 +1,10 @@
+# Objective variant for one ablation row: both constraint weights set to zero.
+# Ref: Methods Sec. 6.1 Eq. (1) and Sec. 6.5. Only the weights named here change.
+lambda_alignment: 0.0
+lambda_invariance: 0.0
+lambda_programme: 0.1
+lambda_sign: 0.05
+covariance_weight: 1.0
+matching_temperature: 0.1
+invariance_mode: variance
+group_penalty: 1.0

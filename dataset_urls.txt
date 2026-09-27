@@ -1,0 +1,60 @@
+# Public resources cited by the auxiliary comparison.
+#
+# Each entry gives the landing page, the endpoint that was read, and the sample count the
+# article prints beside it. Every count below was read back from the source service and
+# matched the printed count at the time of the check; the counts in the panel-A resources
+# are case counts from the project endpoint and the panel-B counts are sample counts from
+# the series header.
+# verified on 2026-09-21
+
+[TCGA-COAD] TCGA-COAD (GDC open tier)
+  landing  https://portal.gdc.cancer.gov/projects/TCGA-COAD
+  endpoint https://api.gdc.cancer.gov/projects/TCGA-COAD
+  panel    pretraining-and-world-knowledge | n=461 | assay whole-exome, RNA-seq, DNA methylation, copy number | license NIH Genomic Data Sharing, open tier
+
+[TCGA-READ] TCGA-READ (GDC open tier)
+  landing  https://portal.gdc.cancer.gov/projects/TCGA-READ
+  endpoint https://api.gdc.cancer.gov/projects/TCGA-READ
+  panel    pretraining-and-world-knowledge | n=172 | assay whole-exome, RNA-seq, DNA methylation, copy number | license NIH Genomic Data Sharing, open tier
+
+[PDC000116] CPTAC-COAD proteogenomic cohort
+  landing  https://proteomic.datacommons.cancer.gov/pdc/study/PDC000116
+  endpoint https://proteomic.datacommons.cancer.gov/pdc/study/PDC000116
+  panel    pretraining-and-world-knowledge | n=110 | assay proteome, phosphoproteome, RNA-seq | license CPTAC data use agreement
+
+[GSE132668] Rectal chemoradiotherapy series 1
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132668
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE132nnn/GSE132668/matrix/GSE132668_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=37 | assay DNA methylation array | license GEO public access, submitter-declared
+
+[GSE119409] Rectal chemoradiotherapy series 2
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE119409
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE119nnn/GSE119409/matrix/GSE119409_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=66 | assay expression array | license GEO public access, submitter-declared
+
+[GSE46862] Rectal chemoradiotherapy series 3
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE46862
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE46nnn/GSE46862/matrix/GSE46862_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=69 | assay expression array | license GEO public access, submitter-declared
+
+[GSE35452] Rectal chemoradiotherapy series 4
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35452
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE35nnn/GSE35452/matrix/GSE35452_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=46 | assay expression array | license GEO public access, submitter-declared
+
+[GSE45404] Rectal chemoradiotherapy series 5
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45404
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE45nnn/GSE45404/matrix/GSE45404-GPL4133_series_matrix.txt.gz
+  matrix   https://ftp.ncbi.nlm.nih.gov/geo/series/GSE45nnn/GSE45404/matrix/GSE45404-GPL570_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=80 | assay expression array (two platforms) | license GEO public access, submitter-declared
+
+[GSE68204] Rectal chemoradiotherapy series 6
+  landing  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68204
+  endpoint https://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68204/matrix/GSE68204-GPL10850_series_matrix.txt.gz
+  matrix   https://ftp.ncbi.nlm.nih.gov/geo/series/GSE68nnn/GSE68204/matrix/GSE68204-GPL6480_series_matrix.txt.gz
+  panel    annotated-radiotherapy-response | n=125 | assay expression array (two platforms) | license GEO public access, submitter-declared
+
+# Resources named by the study that have no public location
+restricted	retrospective neoadjuvant (chemo)radiotherapy arm of the participating sites
+restricted	silent exposure sample (1,024 records) of the participating sites
+restricted	in-vitro irradiation arm cell-line panel
